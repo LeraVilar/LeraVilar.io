@@ -1,12 +1,12 @@
 .header {
-  position: absolute;
+  position: fixed;
   display: inline-flex;
   align-items: center;
   background: white;
   opacity: 0.6;
-  width: 100%;
+  width: 98%;
   height: 100px;
-  margin: 20px auto;
+  margin: 1% 1% 1% 1%;
 }
 .header__logo {
   flex-grow: 1;
