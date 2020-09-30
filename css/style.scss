@@ -54,5 +54,52 @@
 }
 .maps {
 }
+
 .footer {
+	padding: 64px 0px;
+	a{	
+		color: white;
+		text-decoration: none;
+	}
+	
+	background-color: rgb(15, 35, 58);
+	&__counteiner{
+		display: flex;
+		justify-content: space-between;
+		max-width: 970px;
+		margin: 0 auto;
+	}
+	&__colomn {
+		padding: 0px 20px;
+		display: block;
+	}
+	
+
+	&__header {
+		padding: 10px;
+		margin-bottom: 10px;
+		border-bottom: solid 3px white;
+		font-size: 21px;
+		color: white;
+	}
+	&__sup{
+		color: rgb(224, 224, 224);
+	}
+	&__input{
+
+	}
+	&__contact {
+		color: white;
+		font-size: 16px;
+		padding: 10px 0px 0px 0px;
+	}
+
+	&__tel2 {
+		font-size: 24px;
+	}
+}
+.whiteColomn{
+	padding: 0px 20px 20px;
+	border-radius: 15px;
+	background-color: rgb(67, 103, 145) ;
 }
