@@ -8,6 +8,14 @@
 	width: 98%;
 	height: 100px;
 	margin: 1% 1% 1% 1%;
+	transition: 0.5s;
+	border-radius: 25px;
+	
+	&:hover {
+		opacity: 1;
+		transition: 0.5s;
+	}
+
 	&__logo {
 		img {
 			width: 150px;
@@ -26,19 +34,107 @@
 	&__form {
 		width: 200px;
 		height: 70px;
-		border-radius: 15%;
+		border-radius: 50px;
 		color: white;
 		background: blue;
 		border: blue;
 		margin: 20px;
 	}
 }
-.mine {
+.main {
 	width: 100%;
-	min-height: 1000px;
-	background: url(../img/1.jpg);
+	min-height: 800px;
+	background: url(../img/2.jpg);
+
+	&__container {
+		display: flex;
+		justify-content: space-between;
+		flex-direction: column;
+		max-width: 60%;
+		min-height: 800px;
+		margin: 0 auto;
+	}
+
+	&__content {
+		color: white;
+		display: flex;
+		flex-wrap: wrap;
+		width: 50%;
+		margin-top: 12%;
+		font-size: 22px;
+	}
+
+	&__form {
+		display: block;
+		color: white;
+		display: flex;
+		flex-direction: column;
+		background: #436791;
+		padding: 40px;
+		align-items: stretch;
+		width: 50%;
+		line-height: 40px;
+		border-radius: 50px;
+
+		& button {
+			margin: 30px;
+			background: #0C2339;
+			border: #0C2339;
+			color: white;
+			height: 30px;
+			border-radius: 50px;
+			align-items: center;
+			opacity: 0.7;
+
+			&:hover {
+				opacity: 1;
+				transition: 0.2s;
+			}
+		}
+	}
+
+	&__guys	{
+		display: block;
+		margin-left: 60%;
+		margin-top: -45%;
+		img {
+			width: 100%;
+
+		}
+	}
 }
+
 .work {
+	&__container {
+		max-width: 60%;
+		display: flex;		
+		margin: 0 auto;
+	}
+
+	&__cards {
+		width: 40%;
+		margin: 15px;
+		background: #005095;
+		padding: 15px;
+		border-radius: 10px;
+	}
+	&__content {
+		color: white;
+		line-height: 25px;
+		align-items: flex-start;
+			& h1 {
+				font-size: 30px;
+				min-height: 50px;
+			}
+
+			& p {
+				font-size: 15px;
+			}
+
+			& img {
+				max-width: 100%;
+			}
+		}
 }
 .price {
 }
