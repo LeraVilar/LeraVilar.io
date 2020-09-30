@@ -50,9 +50,47 @@
 }
 .advantages {
 }
-.somenumbers {
+.some {
+	background-image: url(/LeraVilar.io/img/1.jpg);
+	p{
+		padding: 5% 0px 5% 0px;
+		margin:0px;
+	}
+
+		&__num {
+			font-size: 48px;
+		}
+
+		&__header {
+			text-align: center;
+			font-size: 60px;
+			color: white;
+		}
+		&__style {
+			color: rgb(81, 172, 251);
+		}
+
+		&__coloms {
+			color: white;
+			display: flex;
+			max-width: 70%;
+			margin: 0 auto;
+			padding: 7% 0px 7% 0px;
+		}
+
+		&__colomn {
+			padding: 0px 40px;
+		}
+
+		&__text {
+		}
 }
 .maps {
+	display: flex;
+	align-items: center;
+	height: 600px;
+	justify-content: center;
+	font-size: 60px;
 }
 
 .footer {
@@ -66,7 +104,7 @@
 	&__counteiner{
 		display: flex;
 		justify-content: space-between;
-		max-width: 970px;
+		max-width: 60%;
 		margin: 0 auto;
 	}
 	&__colomn {
@@ -83,21 +121,33 @@
 		color: white;
 	}
 	&__sup{
+		margin: 10px 0px 0px 0px;
 		color: rgb(224, 224, 224);
 	}
 	&__input{
-
+		height: 24px;
+		border-style: none;
+		border-radius: 5px;
+		margin: 0px 0px 10px 0px;
 	}
 	&__contact {
 		color: white;
 		font-size: 16px;
 		padding: 10px 0px 0px 0px;
 	}
-
+	&__button{
+		margin-top: 25%;
+		padding: 22px;
+		color: white;
+		border-radius: 5px;
+		background-color: red;
+		border-style: none;
+	}
 	&__tel2 {
 		font-size: 24px;
 	}
 }
+
 .whiteColomn{
 	padding: 0px 20px 20px;
 	border-radius: 15px;

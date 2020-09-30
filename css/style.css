@@ -1,4 +1,102 @@
-<<<<<<< HEAD
+.header {
+  position: absolute;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: white;
+  opacity: 0.6;
+  width: 100%;
+  height: 100px;
+  margin: 20px auto;
+}
+
+.header__logo {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  margin: 20px;
+}
+
+.header__logo img {
+  width: 150px;
+  height: 100px;
+}
+
+.header__nav {
+  text-transform: uppercase;
+  margin: 20px;
+}
+
+.header__form {
+  width: 200px;
+  height: 70px;
+  border-radius: 15%;
+  color: white;
+  background: blue;
+  border: blue;
+  margin: 20px;
+}
+
+.mine {
+  width: 100%;
+  min-height: 1000px;
+  background: url(../img/1.jpg);
+}
+
+.some {
+  background-image: url(/LeraVilar.io/img/1.jpg);
+}
+
+.some p {
+  padding: 5% 0px 5% 0px;
+  margin: 0px;
+}
+
+.some__num {
+  font-size: 48px;
+}
+
+.some__header {
+  text-align: center;
+  font-size: 60px;
+  color: white;
+}
+
+.some__style {
+  color: #51acfb;
+}
+
+.some__coloms {
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  max-width: 70%;
+  margin: 0 auto;
+  padding: 7% 0px 7% 0px;
+}
+
+.some__colomn {
+  padding: 0px 40px;
+}
+
+.maps {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 600px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-size: 60px;
+}
+
 .footer {
   padding: 64px 0px;
   background-color: #0f233a;
@@ -16,7 +114,7 @@
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  max-width: 970px;
+  max-width: 60%;
   margin: 0 auto;
 }
 
@@ -34,13 +132,30 @@
 }
 
 .footer__sup {
+  margin: 10px 0px 0px 0px;
   color: #e0e0e0;
+}
+
+.footer__input {
+  height: 24px;
+  border-style: none;
+  border-radius: 5px;
+  margin: 0px 0px 10px 0px;
 }
 
 .footer__contact {
   color: white;
   font-size: 16px;
   padding: 10px 0px 0px 0px;
+}
+
+.footer__button {
+  margin-top: 25%;
+  padding: 22px;
+  color: white;
+  border-radius: 5px;
+  background-color: red;
+  border-style: none;
 }
 
 .footer__tel2 {
@@ -53,42 +168,3 @@
   background-color: #436791;
 }
 /*# sourceMappingURL=style.css.map */
-=======
-.header {
-  position: absolute;
-  display: inline-flex;
-  align-items: center;
-  background: white;
-  opacity: 0.6;
-  width: 100%;
-  height: 100px;
-  margin: 20px auto;
-}
-.header__logo {
-  flex-grow: 1;
-  margin: 20px;
-}
-.header__logo img {
-  width: 150px;
-  height: 100px;
-}
-.header__nav {
-  text-transform: uppercase;
-  margin: 20px;
-}
-.header__form {
-  width: 200px;
-  height: 70px;
-  border-radius: 15%;
-  color: white;
-  background: blue;
-  border: blue;
-  margin: 20px;
-}
-
-.mine {
-  width: 100%;
-  min-height: 1000px;
-  background: url(../img/1.jpg);
-}
->>>>>>> 1b4f22488084a0462add8ef653f8abec69179718
