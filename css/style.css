@@ -46,8 +46,65 @@
   background: url(../img/1.jpg);
 }
 
+.advant__counteiner {
+  max-height: 740px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  max-width: 70%;
+  margin: 0 auto;
+}
+
+.advant__colomn {
+  padding: 0px 30px;
+}
+
+.advant__colomn img {
+  height: 740px;
+}
+
+.advant__text {
+  text-align: left;
+  font-size: 16px;
+}
+
+.advant__style {
+  display: block;
+  padding: 15px 0px;
+  font-size: 44px;
+}
+
+.advant__style2 {
+  color: #51acfb;
+}
+
+.advant__phone {
+  padding: 20px 0px;
+  font-size: 44px;
+}
+
+.advant__phone a {
+  text-decoration: none;
+  color: black;
+}
+
+.advant__button {
+  padding: 22px;
+  color: white;
+  border-radius: 5px;
+  background-color: red;
+  border-style: none;
+}
+
 .some {
-  background-image: url(/LeraVilar.io/img/1.jpg);
+  z-index: 10;
+  background: url(/LeraVilar.io/img/1.jpg) no-repeat;
 }
 
 .some p {
@@ -98,7 +155,7 @@
 }
 
 .footer {
-  padding: 64px 0px;
+  padding: 64px 0px 30px 0px;
   background-color: #0f233a;
 }
 
