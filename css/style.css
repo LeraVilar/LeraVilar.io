@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 .footer {
   padding: 64px 0px;
   background-color: #0f233a;
@@ -52,3 +53,42 @@
   background-color: #436791;
 }
 /*# sourceMappingURL=style.css.map */
+=======
+.header {
+  position: absolute;
+  display: inline-flex;
+  align-items: center;
+  background: white;
+  opacity: 0.6;
+  width: 100%;
+  height: 100px;
+  margin: 20px auto;
+}
+.header__logo {
+  flex-grow: 1;
+  margin: 20px;
+}
+.header__logo img {
+  width: 150px;
+  height: 100px;
+}
+.header__nav {
+  text-transform: uppercase;
+  margin: 20px;
+}
+.header__form {
+  width: 200px;
+  height: 70px;
+  border-radius: 15%;
+  color: white;
+  background: blue;
+  border: blue;
+  margin: 20px;
+}
+
+.mine {
+  width: 100%;
+  min-height: 1000px;
+  background: url(../img/1.jpg);
+}
+>>>>>>> 1b4f22488084a0462add8ef653f8abec69179718
