@@ -39,7 +39,7 @@
 .main {
   width: 100%;
   min-height: 800px;
-  background: url(../img/2.jpg);
+  background: url(../img/860641_fusionplus_1495870432.png);
 }
 .main__container {
   display: flex;
@@ -92,6 +92,10 @@
   width: 100%;
 }
 
+.work {
+  width: 100%;
+  min-height: 550px;
+}
 .work__container {
   max-width: 60%;
   display: flex;
@@ -118,6 +122,42 @@
 }
 .work__content img {
   max-width: 100%;
+}
+
+.price {
+  width: 100%;
+  min-height: 1500px;
+}
+.price__container {
+  max-width: 60%;
+  max-height: 1500px;
+  margin: 0 auto;
+}
+.price__table {
+  width: 100%;
+}
+.price__table img {
+  float: left;
+}
+.price__table-alternative {
+  width: 100%;
+}
+.price__table-alternative img {
+  float: right;
+}
+.price__row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  text-align: center;
+  width: 40%;
+  height: 100%;
+  padding: 10px;
+  line-height: 100%;
+  margin: 10px auto;
+  background: #41ABF7;
+  border-radius: 20px;
+  font-size: 17px;
 }
 
 .advant__counteiner {
