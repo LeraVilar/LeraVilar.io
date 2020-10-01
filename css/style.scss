@@ -178,7 +178,7 @@
 	}
 
 	&__cards {
-		min-width: 220px;
+		min-width: 240px;
 		width: 100%;
 		margin: 15px;
 		background: #005095;
@@ -188,10 +188,9 @@
 	&__content {
 		color: white;
 		line-height: 25px;
-		align-items: flex-start;
 			& h1 {
-				font-size: 30px;
-				min-height: 50px;
+				font-size: 25px;
+				min-height: 70px;
 				padding: 15px;
 			}
 
@@ -449,13 +448,15 @@
 
 	&__colomn {
 		padding: 0px 30px;
-		img{ 
-			max-width: 400px;
+		}
+		&__guys{ 
+			
+				max-width: 400px;
+
 			@media screen and ($screen-max) {
 				min-width: 70%;
 			}
 		}
-	}
 
 	&__text {
 		line-height: 1.5;
@@ -463,7 +464,7 @@
 		text-align: left;
 		font-size: 16px;
 		@media screen and ($screen-max) {
-				max-width: 70%;
+				max-width: 80%;
 			}
 	}
 
@@ -482,12 +483,17 @@
 		a{
 			text-decoration: none;
 			color: black;
+			@media screen and ($screen-max) {
+				max-width: 80%;
+			}
 		}
 		padding: 20px 0px;
+		img {
+			
+			height: 30px;
+		}
 		font-size: 44px;
-		@media screen and ($screen-max) {
-				max-width: 70%;
-			}
+		
 	}
 
 	&__button {

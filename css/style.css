@@ -147,7 +147,7 @@
   justify-content: center;
 }
 .work__cards {
-  min-width: 220px;
+  min-width: 240px;
   width: 100%;
   margin: 15px;
   background: #005095;
@@ -157,11 +157,10 @@
 .work__content {
   color: white;
   line-height: 25px;
-  align-items: flex-start;
 }
 .work__content h1 {
-  font-size: 30px;
-  min-height: 50px;
+  font-size: 25px;
+  min-height: 70px;
   padding: 15px;
 }
 .work__content p {
@@ -398,11 +397,11 @@
 .advant__colomn {
   padding: 0px 30px;
 }
-.advant__colomn img {
+.advant__guys {
   max-width: 400px;
 }
 @media screen and (max-width: 1170px) {
-  .advant__colomn img {
+  .advant__guys {
     min-width: 70%;
   }
 }
@@ -414,7 +413,7 @@
 }
 @media screen and (max-width: 1170px) {
   .advant__text {
-    max-width: 70%;
+    max-width: 80%;
   }
 }
 .advant__style {
@@ -435,9 +434,12 @@
   color: black;
 }
 @media screen and (max-width: 1170px) {
-  .advant__phone {
-    max-width: 70%;
+  .advant__phone a {
+    max-width: 80%;
   }
+}
+.advant__phone img {
+  height: 30px;
 }
 .advant__button {
   font-family: "Noto Sans", sans-serif;
