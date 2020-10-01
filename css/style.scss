@@ -188,7 +188,49 @@
 .lulz {
 }
 .coments {
+
+	&__counteiner {
+		
+	}
+
+	&__header {
+	}
+	//============ КЛАССЫ СЛАЙДЕРА ============
+	&__slider {
+		min-width: 0;
+		position: relative;
+	}
+
+	&__item {
+		min-height: 600px;
+		background-image: url(/img/background_transparent_01.png);
+		max-width: 520px;
+	}
+	//============ КЛАССЫ СЛАЙДЕРА ============
+	.slick-slider{
+		padding: 20px;
+	}
+	.slick-list{
+		overflow: hidden;
+	}
+	.slick-track{
+		display: flex;
+	}
+	.slick-arrow{
+		font-size: 0px;
+		position: absolute;
+		top: 50%;
+		z-index: 10;
+		&.slick-prev{
+			left: 0%;
+		}
+		&.slick-next{
+			right:0%;
+		}
+	}
 }
+
+
 .advant {
 
 	&__counteiner {

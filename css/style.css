@@ -222,6 +222,46 @@
   font-size: 17px;
 }
 
+.coments__slider {
+  min-width: 0;
+  position: relative;
+}
+
+.coments__item {
+  min-height: 600px;
+  background-image: url(/img/background_transparent_01.png);
+  max-width: 520px;
+}
+
+.coments .slick-slider {
+  padding: 20px;
+}
+
+.coments .slick-list {
+  overflow: hidden;
+}
+
+.coments .slick-track {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.coments .slick-arrow {
+  font-size: 0px;
+  position: absolute;
+  top: 50%;
+  z-index: 10;
+}
+
+.coments .slick-arrow.slick-prev {
+  left: 0%;
+}
+
+.coments .slick-arrow.slick-next {
+  right: 0%;
+}
+
 .advant__counteiner {
   max-height: 740px;
   display: -webkit-box;
