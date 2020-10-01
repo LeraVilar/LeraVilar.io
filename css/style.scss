@@ -10,7 +10,7 @@
 	margin: 1% 1% 1% 1%;
 	transition: 0.5s;
 	border-radius: 25px;
-	
+	z-index: 99;
 	&:hover {
 		opacity: 1;
 		transition: 0.5s;
@@ -178,7 +178,7 @@
     	padding: 10px;
     	line-height: 100%;
     	margin: 10px auto;
-    	background: #41ABF7;
+    	border: 1px solid #41ABF7;
     	border-radius: 20px;
     	font-size: 17px;
 	}
@@ -199,11 +199,11 @@
 	&__slider {
 		min-width: 0;
 		position: relative;
+		background-image: url(../img/background_03.jpg);
 	}
 
 	&__item {
 		min-height: 600px;
-		background-image: url(/img/background_transparent_01.png);
 		max-width: 520px;
 	}
 	//============ КЛАССЫ СЛАЙДЕРА ============
@@ -285,7 +285,7 @@
 
 .some {
 	z-index: 10;
-	background: url(/LeraVilar.io/img/1.jpg) no-repeat;
+	background: url(../img/background_01.jpg) no-repeat;
 	p{
 		padding: 5% 0px 5% 0px;
 		margin:0px;
