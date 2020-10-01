@@ -250,6 +250,7 @@
 }
 
 .coments__autor {
+  font-size: 14px;
   color: white;
   padding: 10px 0px;
 }
@@ -264,7 +265,7 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  max-width: 80%;
+  max-width: 90%;
   margin: 0 auto;
 }
 
@@ -313,6 +314,8 @@
   top: 50%;
   z-index: 10;
   background-color: rgba(255, 255, 255, 0);
+  -webkit-transition: .5s;
+  transition: .5s;
 }
 
 .coments .slick-arrow.slick-prev {
@@ -323,12 +326,28 @@
   right: 0%;
 }
 
+.coments .slick-prev:active {
+  -webkit-transform: translateX(-10px);
+          transform: translateX(-10px);
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+.coments .slick-next:active {
+  -webkit-transform: translateX(10px);
+          transform: translateX(10px);
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
 .coments .slick-prev::before {
+  color: rgba(255, 255, 255, 0.7);
   font-size: 70px;
   content: "< ";
 }
 
 .coments .slick-next::after {
+  color: rgba(255, 255, 255, 0.5);
   font-size: 70px;
   content: " >";
 }
@@ -357,6 +376,7 @@
 }
 
 .advant__text {
+  line-height: 1.5;
   font-family: "Noto Sans", sans-serif;
   text-align: left;
   font-size: 16px;
