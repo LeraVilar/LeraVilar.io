@@ -11,3 +11,8 @@ $(document).ready(function(){
 });
 
 
+document.getElementById("header__burger").onclick = function() {open()};
+
+function open() {
+    document.getElementById("header__menu").classList.toggle("show");
+}

@@ -2,9 +2,10 @@
    $font_style: 'Noto Sans', sans-serif;
    //  font-weight: bold; <=== жирность шрифта
   //   line-height: 1.5; <=== растояние между строками 
-   $screen-max: 1170px;
-   $screen-mid: 800px;
-   $screen-min: 400px;
+   $screen-max: "max-width: 1170px";
+   $screen-mid: "max-width: 900px";
+   $screen-min: "max-width: 400px";
+
 
 .header {
 	font-family: $font_style;
@@ -32,11 +33,48 @@
 		flex-grow: 1;
 		margin: 20px;
 	}
+.show {
+		display: inline-flex;
+		
+		}
+	&__menu {
+		font-family: $font_style;
+		display: inline-flex;
+		text-transform: uppercase;
+		margin: 20px;
+		max-width: 100%;
 
+		@media screen and ($screen-max) {
+			display: none;
+		
+	
+		}
+	}
+	&__burger {
+		@media screen and ($screen-max) {
+			display:inline-block;
+    		margin:3px;
+    		cursor:pointer;
+   		}
+
+    & i{
+
+    @media screen and ($screen-max){
+     	display:block;
+    	width:30px;
+     	height:6px;
+     	margin:4px auto;
+    	background:#222;
+		}
+	
+		}
+	}
+	
 	&__nav {
 		font-family: $font_style;
 		text-transform: uppercase;
 		margin: 20px;
+		max-width: 100%;
 
 	}
 
@@ -57,6 +95,8 @@
 	min-height: 800px;
 	background: url(../img/860641_fusionplus_1495870432.png);
 
+
+
 	&__container {
 		display: flex;
 		justify-content: space-between;
@@ -64,6 +104,11 @@
 		max-width: 60%;
 		min-height: 800px;
 		margin: 0 auto;
+
+		@media screen and ($screen-max) {
+		 	max-width: none;
+		 	margin: 0 5% 0 5%;
+		 }
 	}
 
 	&__content {
@@ -125,7 +170,6 @@
 	min-height: 550px;
 
 	&__container {
-		justify-content: space-between;
 		max-width: 60%;
 		display: flex;		
 		margin: 0 auto;
@@ -134,7 +178,7 @@
 	}
 
 	&__cards {
-		min-width: 300px;
+		min-width: 220px;
 		width: 100%;
 		margin: 15px;
 		background: #005095;
@@ -158,7 +202,6 @@
 
 			& img {
 				max-width: 100%;
-				min-width: 100%
 			}
 		}
 }
@@ -213,16 +256,18 @@
 	background: #41ABF7;
 
 	&__container {
-		max-width: 60%;
+		max-width: 70%;
 		margin: 0 auto;
+		@media screen and ($screen-max) {
+				max-width: none;
+				margin: 0 5% 0 5%;
+			}
 	}
 	&__main {
 		display: flex;
-		justify-content: space-between;
 		align-items: center;
 		& h1 {
 			width: 100%;
-			text-align: center;
 			color: white;
 		}
 		& button {
@@ -251,10 +296,15 @@
 	&__container {
 		max-width: 60%;
 		margin: 0 auto;
+
+		@media screen and ($screen-max) {
+			max-width: none;
+			margin: 0 5% 0 5%;
+		}
 	}
 	&__text {
 		position: absolute;
-		margin: 5%;
+		margin: 5% 4% 0 0;
 		width: 20%;
 		display: flex;
 		font-size: 35px;
@@ -386,20 +436,24 @@
 .advant {
 
 	&__counteiner {
-		max-height: 740px;
+		min-height: 740px;
 		display: flex;
 		justify-content: space-between;
 		align-items: center;
 		max-width: 70%;
 		margin: 0 auto;
-
+		@media screen and ($screen-max) {
+			max-width: none;
+		}
 	}
 
 	&__colomn {
 		padding: 0px 30px;
 		img{ 
-			height: 740px;
-
+			max-width: 400px;
+			@media screen and ($screen-max) {
+				min-width: 70%;
+			}
 		}
 	}
 
@@ -408,6 +462,9 @@
 		font-family: $font_style;
 		text-align: left;
 		font-size: 16px;
+		@media screen and ($screen-max) {
+				max-width: 70%;
+			}
 	}
 
 	&__style {
@@ -428,6 +485,9 @@
 		}
 		padding: 20px 0px;
 		font-size: 44px;
+		@media screen and ($screen-max) {
+				max-width: 70%;
+			}
 	}
 
 	&__button {
@@ -437,6 +497,7 @@
 		border-radius: 5px;
 		background-color: red;
 		border-style: none;
+		margin: 0 0 5% 0;
 	}
 }
 
@@ -466,7 +527,7 @@
 			font-family: $font_style;
 			color: white;
 			display: flex;
-			max-width: 70%;
+			min-width: 70%;
 			margin: 0 auto;
 			padding: 7% 0px 7% 0px;
 		}
@@ -530,7 +591,7 @@
 		padding: 10px 0px 0px 0px;
 	}
 	&__button{
-		margin-top: 25%;
+		margin: 5% 20%;
 		padding: 22px;
 		color: white;
 		border-radius: 5px;
