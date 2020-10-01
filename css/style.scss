@@ -131,13 +131,15 @@
 		max-width: 60%;
 		display: flex;		
 		margin: 0 auto;
+		justify-content: center;
+	
 	}
 
 	&__cards {
-		width: 40%;
+		min-width: 300px;
+		width: 100%;
 		margin: 15px;
 		background: #005095;
-		padding: 15px;
 		border-radius: 10px;
 	}
 	&__content {
@@ -147,14 +149,17 @@
 			& h1 {
 				font-size: 30px;
 				min-height: 50px;
+				padding: 15px;
 			}
 
 			& p {
 				font-size: 15px;
+				padding: 15px;
 			}
 
 			& img {
 				max-width: 100%;
+				min-width: 100%
 			}
 		}
 }
