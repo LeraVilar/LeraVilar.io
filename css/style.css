@@ -161,35 +161,88 @@
   font-size: 17px;
 }
 
+.coments__counteiner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  max-width: 80%;
+  margin: 0 auto;
+}
+
+.coments__header {
+  padding: 40px 0px;
+  text-align: center;
+  font-size: 46px;
+}
+
+.coments__style {
+  color: #51acfb;
+}
+
 .coments__slider {
+  overflow: hidden;
   min-width: 0;
   position: relative;
   background-image: url(../img/background_03.jpg);
 }
 .coments__item {
+<<<<<<< HEAD
   min-height: 600px;
   max-width: 520px;
+=======
+  min-width: 0;
+>>>>>>> 9ca39988e628299c07eafa0ffae1c0d6374d41c8
 }
 .coments .slick-slider {
   padding: 20px;
 }
+<<<<<<< HEAD
 .coments .slick-list {
   overflow: hidden;
 }
+=======
+
+>>>>>>> 9ca39988e628299c07eafa0ffae1c0d6374d41c8
 .coments .slick-track {
   display: flex;
 }
+<<<<<<< HEAD
+=======
+
+.coments .slick-list {
+  overflow: hidden;
+}
+
+>>>>>>> 9ca39988e628299c07eafa0ffae1c0d6374d41c8
 .coments .slick-arrow {
+  border-style: none;
   font-size: 0px;
   position: absolute;
   top: 50%;
   z-index: 10;
+  background-color: rgba(255, 255, 255, 0);
 }
 .coments .slick-arrow.slick-prev {
   left: 0%;
 }
 .coments .slick-arrow.slick-next {
   right: 0%;
+}
+
+.coments .slick-prev::before {
+  font-size: 70px;
+  content: "< ";
+}
+
+.coments .slick-next::after {
+  font-size: 70px;
+  content: " >";
 }
 
 .advant__counteiner {

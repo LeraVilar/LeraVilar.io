@@ -190,43 +190,70 @@
 .coments {
 
 	&__counteiner {
-		
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		max-width: 80%;
+		margin: 0 auto;
 	}
-
 	&__header {
+		padding: 40px 0px;
+		text-align: center;
+		font-size: 46px;
+
+	}
+	&__style{
+		color: #51acfb;
+		
 	}
 	//============ КЛАССЫ СЛАЙДЕРА ============
 	&__slider {
+		overflow: hidden;
 		min-width: 0;
 		position: relative;
 		background-image: url(../img/background_03.jpg);
 	}
 
 	&__item {
+<<<<<<< HEAD
 		min-height: 600px;
 		max-width: 520px;
+=======
+		min-width: 0;
+>>>>>>> 9ca39988e628299c07eafa0ffae1c0d6374d41c8
 	}
-	//============ КЛАССЫ СЛАЙДЕРА ============
+	
 	.slick-slider{
 		padding: 20px;
-	}
-	.slick-list{
-		overflow: hidden;
 	}
 	.slick-track{
 		display: flex;
 	}
+	.slick-list{
+		overflow: hidden;
+	}
+	
 	.slick-arrow{
+		border-style: none;
 		font-size: 0px;
 		position: absolute;
 		top: 50%;
 		z-index: 10;
+		background-color: rgba(255, 255, 255, 0);
 		&.slick-prev{
 			left: 0%;
 		}
 		&.slick-next{
 			right:0%;
 		}
+	}
+	.slick-prev::before{
+		font-size: 70px;
+		content: "< ";
+	}
+	.slick-next::after{
+		font-size: 70px;
+		content: " >";
 	}
 }
 
