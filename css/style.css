@@ -222,23 +222,42 @@
   font-size: 17px;
 }
 
+.coments__counteiner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  max-width: 80%;
+  margin: 0 auto;
+}
+
+.coments__header {
+  padding: 40px 0px;
+  text-align: center;
+  font-size: 46px;
+}
+
+.coments__style {
+  color: #51acfb;
+}
+
 .coments__slider {
+  overflow: hidden;
   min-width: 0;
   position: relative;
 }
 
 .coments__item {
-  min-height: 600px;
-  background-image: url(/img/background_transparent_01.png);
-  max-width: 520px;
+  min-width: 0;
 }
 
 .coments .slick-slider {
   padding: 20px;
-}
-
-.coments .slick-list {
-  overflow: hidden;
 }
 
 .coments .slick-track {
@@ -247,11 +266,17 @@
   display: flex;
 }
 
+.coments .slick-list {
+  overflow: hidden;
+}
+
 .coments .slick-arrow {
+  border-style: none;
   font-size: 0px;
   position: absolute;
   top: 50%;
   z-index: 10;
+  background-color: rgba(255, 255, 255, 0);
 }
 
 .coments .slick-arrow.slick-prev {
@@ -260,6 +285,16 @@
 
 .coments .slick-arrow.slick-next {
   right: 0%;
+}
+
+.coments .slick-prev::before {
+  font-size: 70px;
+  content: "< ";
+}
+
+.coments .slick-next::after {
+  font-size: 70px;
+  content: " >";
 }
 
 .advant__counteiner {
