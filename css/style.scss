@@ -1,13 +1,10 @@
-// @font-face {
-//  font-family: izi, cursive; /* Гарнитура шрифта */
-//  src: url(css/font.woff); /* Для IE5-8 */
-// 	src: local(pompadur), url(css/font.woff); /* Для остальных браузеров */
 
-//  }
    $font_style: 'Noto Sans', sans-serif;
    //  font-weight: bold; <=== жирность шрифта
   //   line-height: 1.5; <=== растояние между строками 
-   
+   $screen-max: 1170px;
+   $screen-mid: 800px;
+   $screen-min: 400px;
 
 .header {
 	font-family: $font_style;
@@ -224,6 +221,7 @@
 		
 	}
 	&__autor{
+		font-size: 14px;
 		color: white;
 		padding: 10px 0px;
 
@@ -232,7 +230,7 @@
 		display: flex;
 		justify-content: space-between;
 		align-items: center;
-		max-width: 80%;
+		max-width: 90%;
 		margin: 0 auto;
 	}
 	&__header {
@@ -283,12 +281,25 @@
 		&.slick-next{
 			right:0%;
 		}
+		transition: .5s;
+	}
+	
+	.slick-prev:active{
+		transform: translateX(-10px);
+		transition: .5s;
+	}
+	.slick-next:active{
+		transform: translateX(10px);
+		transition: .5s;
 	}
 	.slick-prev::before{
+		color: rgba(255, 255, 255, 0.7);
 		font-size: 70px;
 		content: "< ";
 	}
+	
 	.slick-next::after{
+		color: rgba(255, 255, 255, 0.5);
 		font-size: 70px;
 		content: " >";
 	}
@@ -316,12 +327,14 @@
 	}
 
 	&__text {
+		line-height: 1.5;
 		font-family: $font_style;
 		text-align: left;
 		font-size: 16px;
 	}
 
 	&__style {
+		
 		display: block;
 		padding: 15px 0px;
 		font-size: 44px;
