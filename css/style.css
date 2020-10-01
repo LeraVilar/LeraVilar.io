@@ -144,6 +144,9 @@
 }
 
 .work__container {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   max-width: 60%;
   display: -webkit-box;
   display: -ms-flexbox;

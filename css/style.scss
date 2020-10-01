@@ -125,6 +125,7 @@
 	min-height: 550px;
 
 	&__container {
+		justify-content: space-between;
 		max-width: 60%;
 		display: flex;		
 		margin: 0 auto;
