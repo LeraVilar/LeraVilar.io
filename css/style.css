@@ -12,6 +12,11 @@
   border-radius: 25px;
   z-index: 99;
 }
+@media screen and (max-width: 400px) {
+  .header {
+    margin: 0;
+  }
+}
 .header:hover {
   opacity: 1;
   transition: 0.5s;
@@ -23,6 +28,11 @@
 .header__logo img {
   width: 150px;
   height: 100px;
+}
+@media screen and (max-width: 400px) {
+  .header__logo img {
+    width: 100%;
+  }
 }
 .header .show {
   display: inline-flex;
@@ -91,16 +101,36 @@
     margin: 0 5% 0 5%;
   }
 }
+@media screen and (max-width: 400px) {
+  .main__container {
+    max-width: none;
+    margin: 0 5 auto;
+  }
+}
 .main__content {
   color: white;
   display: flex;
   flex-wrap: wrap;
-  width: 50%;
+  max-width: 50%;
   margin-top: 12%;
   font-size: 22px;
 }
+@media screen and (max-width: 900px) {
+  .main__content h1 {
+    font-size: 35px;
+  }
+}
+@media screen and (max-width: 900px) {
+  .main__content {
+    margin-top: 20%;
+  }
+}
+@media screen and (max-width: 400px) {
+  .main__content {
+    margin-top: 25%;
+  }
+}
 .main__form {
-  display: block;
   color: white;
   display: flex;
   flex-direction: column;
@@ -111,15 +141,22 @@
   line-height: 40px;
   border-radius: 50px;
 }
+@media screen and (max-width: 400px) {
+  .main__form {
+    padding: 5px;
+    width: 100%;
+    border-radius: 0;
+  }
+}
 .main__form button {
   font-family: "Noto Sans", sans-serif;
-  margin: 30px;
+  margin-top: 30px;
   background: #0C2339;
   border: #0C2339;
   color: white;
+  max-width: 100%;
   height: 30px;
   border-radius: 50px;
-  align-items: center;
   opacity: 0.7;
 }
 .main__form button:hover {
@@ -133,6 +170,11 @@
 }
 .main__guys img {
   width: 100%;
+}
+@media screen and (max-width: 400px) {
+  .main__guys {
+    display: none;
+  }
 }
 
 .work {
@@ -229,6 +271,18 @@
     margin: 0 5% 0 5%;
   }
 }
+@media screen and (max-width: 900px) {
+  .callus__container {
+    margin: 0;
+    padding: 5px;
+  }
+}
+@media screen and (max-width: 400px) {
+  .callus__container {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
 .callus__main {
   display: flex;
   align-items: center;
@@ -238,7 +292,7 @@
   color: white;
 }
 .callus__main button {
-  width: 200px;
+  min-width: 200px;
   height: 50px;
   background: white;
   color: black;
@@ -250,6 +304,18 @@
   transform: scale(1.1);
   transition: 0.5s;
 }
+@media screen and (max-width: 900px) {
+  .callus__main button {
+    margin: auto;
+  }
+}
+@media screen and (max-width: 900px) {
+  .callus__main {
+    flex-wrap: wrap;
+    align-items: center;
+    text-align: center;
+  }
+}
 
 .lulz {
   font-family: "Noto Sans", sans-serif;
@@ -257,6 +323,11 @@
   width: 100%;
   background: url(../img/background_plumbing_01.jpg);
   display: flex;
+}
+@media screen and (max-width: 900px) {
+  .lulz {
+    background: #fff;
+  }
 }
 .lulz__container {
   display: flex;
@@ -272,7 +343,7 @@
 @media screen and (max-width: 900px) {
   .lulz__container {
     flex-wrap: wrap;
-    margin-left: 25%;
+    margin: auto;
   }
 }
 .lulz__text {
@@ -290,6 +361,11 @@
 @media screen and (max-width: 900px) {
   .lulz__items {
     flex-direction: column;
+  }
+}
+@media screen and (max-width: 400px) {
+  .lulz__items {
+    margin: 0;
   }
 }
 .lulz__item {
@@ -345,6 +421,11 @@
   font-size: 69px;
   font-family: izi, cursive;
   font-weight: bold;
+}
+@media screen and (max-width: 400px) {
+  .coments__header {
+    font-size: 60px;
+  }
 }
 .coments__style {
   color: #51acfb;
@@ -414,15 +495,31 @@
     max-width: none;
   }
 }
+@media screen and (max-width: 900px) {
+  .advant__counteiner {
+    flex-wrap: wrap;
+  }
+}
 .advant__colomn {
   padding: 0px 30px;
+}
+@media screen and (max-width: 900px) {
+  .advant__colomn {
+    padding: 0;
+  }
 }
 .advant__guys {
   max-width: 400px;
 }
 @media screen and (max-width: 1170px) {
   .advant__guys {
-    min-width: 70%;
+    min-width: 60%;
+    padding: 0;
+  }
+}
+@media screen and (max-width: 400px) {
+  .advant__guys {
+    display: none;
   }
 }
 .advant__text {
@@ -436,10 +533,30 @@
     max-width: 80%;
   }
 }
+@media screen and (max-width: 900px) {
+  .advant__text {
+    padding: 10px;
+  }
+}
+@media screen and (max-width: 400px) {
+  .advant__text {
+    padding: 0;
+  }
+}
 .advant__style {
   display: block;
   padding: 15px 0px;
   font-size: 44px;
+}
+@media screen and (max-width: 900px) {
+  .advant__style {
+    font-size: 35px;
+  }
+}
+@media screen and (max-width: 400px) {
+  .advant__style {
+    font-size: 30px;
+  }
 }
 .advant__style2 {
   color: #51acfb;
@@ -456,6 +573,11 @@
 @media screen and (max-width: 1170px) {
   .advant__phone a {
     max-width: 80%;
+  }
+}
+@media screen and (max-width: 1170px) and (max-width: 400px) {
+  .advant__phone a {
+    font-size: 35px;
   }
 }
 .advant__phone img {
@@ -498,12 +620,29 @@
   font-family: "Noto Sans", sans-serif;
   color: white;
   display: flex;
-  min-width: 70%;
+  max-width: 70%;
   margin: 0 auto;
   padding: 7% 0px 7% 0px;
 }
+@media screen and (max-width: 1170px) {
+  .some__coloms {
+    margin: 0 auto;
+    flex-wrap: wrap;
+    max-width: none;
+  }
+}
 .some__colomn {
   padding: 0px 40px;
+}
+@media screen and (max-width: 1170px) {
+  .some__colomn {
+    margin: auto;
+    flex-wrap: wrap;
+    text-align: center;
+    justify-content: space-between;
+    padding: 10px;
+    max-width: 40%;
+  }
 }
 .footer {
   padding: 64px 0px 30px 0px;
@@ -539,7 +678,7 @@
   color: #e0e0e0;
 }
 .footer__input {
-  min-width: 300px;
+  min-width: 100%;
   min-height: 30px;
   height: 24px;
   border-style: none;
@@ -553,6 +692,11 @@
 }
 .footer__contact :hover {
   color: red;
+}
+@media screen and (max-width: 900px) {
+  .footer__contact {
+    padding-bottom: 10px;
+  }
 }
 .footer__button {
   margin: 5% 20%;
