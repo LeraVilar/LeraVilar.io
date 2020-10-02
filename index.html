@@ -13,20 +13,17 @@
         <div class="header">
             <div class="header__logo"><img src="img/logo.png"> </div>
             <div id="header__menu" class="header__menu">
-            <div class="header__nav">Главная</div>
-            <div class="header__nav">Наши услуги</div>
-            <div class="header__nav">Вызвать мастера</div>
-            <div class="header__nav"><a href="tel:+79991112233">Тел: +7 999 111 22 33</a> 
-            </div>
+			<div class="header__nav header__tel"><a href="tel:8800900800">Тел: 8 800-900-800</a></div>
+            <div class="header__nav"><a href="#1">Главная</a></div>
         </div>
         <div id="header__burger" class="header__burger">
         	<i></i>
         	<i></i>
         	<i></i>
         </div>
-            <button class="header__form">Вызвать мастера</button>
+            <button class="header__form" id="btn_modal_window">Вызвать мастера</button>
         </div>
-        <div class="main">
+        <div class="main" id="1">
         	<div class="main__container">
         		<div class="main__plus">
         		<div class="main__content">
@@ -47,7 +44,7 @@
         			<label for="commend">Комментарий</label>
         			<input type="text" id="commend">
         			
-        			<button type="submit">Вызвать мастера</button>
+        			<button type="submit" id="btn_modal_window">Вызвать мастера</button>
         		</form>
         	</div>
         		<div class="main__guys">
@@ -126,7 +123,7 @@
         	<div class="callus__container">
         		<div class="callus__main">
         			<h1>Нужен ремонт стиральной или посудомоечной машины?</h1>
-        			<button>Вызвать мастера</button>
+        			<button id="btn_modal_window">Вызвать мастера</button>
         		</div>
         	</div>
         </div>
@@ -202,7 +199,7 @@
                         <span class="advant__style">Доверьте <span class="advant__style2">Ремонт</span>  Профессионалам</span><br />
                         Сервисный центр «Феникс» занимается ремонтом стиральных машин разных марок и моделей на дому заказчика. Инженеры с опытом от 3-х лет и больше ликвидируют неполадки любого характера и знают все об особенностях техники разных производителей. Ремонт проводится в день обращения клиента. Оформите заявку, и мастер в течение 30 минут выедет по указанному адресу. Также возможен выезд в удобное для вас время. Ремонт проводится с использованием сертифицированных оригинальных комплектующих, которые всегда есть на складе сервиса.</div>
                         <div class="advant__phone"><img src="img/icon/phone-b.png"><a href="tel:8800900800"> 8 800-900-800</a></div>
-                        <button class="advant__button">Вызвать мастера</button>
+                        <button class="advant__button" id="btn_modal_window">Вызвать мастера</button>
                 </div>
                 
 
@@ -235,7 +232,7 @@
 					<p class="footer__sup">Фамилия</p><input class="footer__input" type="text">
 					<p class="footer__sup">EMAIL</p><input class="footer__input" type="text">
                     <p class="footer__sup">Телефон</p><input class="footer__input" type="text"><br />
-					<button class="footer__button">Вызвать мастера</button>
+					<button class="footer__button" id="btn_modal_window">Вызвать мастера</button>
 				</div>
                 <div class="footer__colomn">
                     <div class="footer__header">Срочный вызов мастера</div> 
@@ -243,9 +240,24 @@
                     
                 </div>
             </div>
-        </div>
+		</div>
+		<!-- <button id="btn_modal_window">Open Modal</button> -->
+  <div id="my_modal" class="modal">
+    <div class="modal_content">
+      <span class="close_modal_window">×</span>
+      <div class="modal__colomn">
+		<div class="modal__header">Обратный звонок</div> 
+		<p class="modal__sup">Имя</p><input class="modal__input" type="text">
+		<p class="modal__sup">Фамилия</p><input class="modal__input" type="text">
+		<p class="modal__sup">EMAIL</p><input class="modal__input" type="text">
+		<p class="modal__sup">Телефон</p><input class="modal__input" type="text"><br />
+		<button class="modal__button">Вызвать мастера</button>
+	</div>
+    </div>
 		<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
 		<script src="js/slick.min.js"></script>
 		<script src="js/scripts.js"></script>
+		
+  </div>
 </body>
 </html>
