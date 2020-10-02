@@ -92,7 +92,7 @@
 	font-family: $font_style;
 	
 	width: 100%;
-	min-height: 800px;
+	min-height: 700px;
 	background: url(../img/860641_fusionplus_1495870432.png);
 
 
@@ -612,8 +612,11 @@
 		margin: 0px 0px 10px 0px;
 	}
 	&__contact {
+		:hover{
+			color: red;
+		}
 		color: white;
-		font-size: 16px;
+		font-size: 20px;
 		padding: 10px 0px 0px 0px;
 	}
 	&__button{
@@ -621,15 +624,18 @@
 		padding: 22px;
 		color: white;
 		border-radius: 5px;
-		background-color: red;
+		background-color: rgb(255, 0, 0);
 		border-style: none;
 	}
-	&__tel2 {
-		font-size: 24px;
+	&__tel2{
+		:hover{
+			color: red;
+		}
+		text-align: center;
+		margin-top: 20px;
+		font-size: 34px;
 	}
-	@media (max-width: $screen-mid) {
-		
-	}
+	
 }
 
 .whiteColomn{
