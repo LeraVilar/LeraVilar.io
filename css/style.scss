@@ -22,7 +22,8 @@
 	z-index: 99;
 
 	@media screen and ($screen-min) {
-			margin: 0;		
+			margin: 0;
+			width: 100%;		
 	
 		}
 	&:hover {
@@ -82,12 +83,23 @@
 	}
 	
 	&__nav {
+		a{
+			font-size: 20px;
+			text-decoration: none;
+			color: black;
+			
+		}
 		font-family: $font_style;
 		text-transform: uppercase;
-		margin: 20px;
+		margin-right: 70px;
 		max-width: 100%;
-
+		:hover{
+			color: red;
+		}
 	}
+	
+		
+	
 
 	&__form {
 		width: 200px;
@@ -104,7 +116,7 @@
 	
 	width: 100%;
 	min-height: 700px;
-	background: url(../img/860641_fusionplus_1495870432.png);
+	background: url(../img/860641_fusionplus_1495870432.jpg);
 
 
 
@@ -572,6 +584,7 @@
 
 		@media screen and ($screen-min) {
 				padding: 0;
+				margin: auto;
 			}
 	}
 
@@ -585,6 +598,7 @@
 			}
 		@media screen and ($screen-min) {
 				font-size: 30px;
+				margin: auto;
 			}
 
 	}
@@ -602,6 +616,7 @@
 
 			@media screen and ($screen-min) {
 				font-size: 35px;
+				margin: auto;
 			}
 			}
 		}
@@ -624,6 +639,10 @@
 		background-color: red;
 		border-style: none;
 		margin: 0 0 5% 0;
+
+		@media screen and ($screen-min) {
+			align-items: center;
+			}
 	}
 }
 
@@ -739,8 +758,8 @@
 		}
 	}
 	&__button{
-		margin: 5% 20%;
 		padding: 22px;
+		width: 100%;
 		color: white;
 		border-radius: 5px;
 		background-color: rgb(255, 0, 0);
@@ -763,3 +782,69 @@
 	border-radius: 15px;
 	background-color: rgb(67, 103, 145) ;
 }
+// ================= МОДАЛКИ
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.6);
+	z-index: 1000;
+	.modal_content {
+		background-color: rebeccapurple;
+		margin: 10% auto;
+		padding: 20px;
+		border: 1px solid #888;
+		width: 80%;
+		z-index: 99999;
+		.close_modal_window {
+			color: #aaa;
+			float: right;
+			font-size: 28px;
+			font-weight: bold;
+			cursor: pointer;
+		}
+	}
+
+	&__colomn {
+		min-width: 200px;
+		font-family: $font_style;
+		padding: 0px 20px;
+		display: block;
+	}
+
+	&__header {
+		padding: 10px;
+		margin-bottom: 10px;
+		border-bottom: solid 3px white;
+		font-size: 21px;
+		color: white;
+	}
+
+	&__sup {
+		margin: 15px 0px 0px 0px;
+		color: rgb(224, 224, 224);
+	}
+
+	&__input {
+		min-width: 300px;
+		min-height: 30px;
+		height: 24px;
+		border-style: none;
+		border-radius: 5px;
+		margin: 0px 0px 10px 0px;
+	}
+
+	&__button {
+		margin: 5% 20%;
+		padding: 22px;
+		color: white;
+		border-radius: 5px;
+		background-color: rgb(255, 0, 0);
+		border-style: none;
+	}
+}
+
