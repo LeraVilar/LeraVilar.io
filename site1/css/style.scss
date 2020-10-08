@@ -1,3 +1,8 @@
+body{
+    box-sizing: border-box;
+}
+
+
 .header {
 
     &__logo {
@@ -12,9 +17,35 @@
 .wecan {
 }
 .prise {
+    min-height: 850px;
 }
 .comments {
+    min-height: 720px;
+
+    &__counteiner {
+    }
+
+    &__header {
+    }
+
+    &__items {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
 }
+.comItem {
+    
+    min-width: 575px;
+    min-height: 230px;
+
+    &__header {
+    }
+
+    &__content {
+    }
+}
+
 .footer {
     min-height: 118px;
     min-width: 100%;
