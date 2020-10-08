@@ -1,0 +1,69 @@
+.footer {
+  min-height: 118px;
+  min-width: 100%;
+  background-color: #474747;
+}
+
+.footer__counteiner {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.footer__logo {
+  margin: 13px 40px 0px 50px;
+}
+
+.footer__org {
+  color: white;
+  margin-right: 330px;
+}
+
+.footer__org p {
+  margin: 0px 0px 3px 0px;
+}
+
+.footer__contacts {
+  margin-top: 14px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.footer__contact {
+  margin: 5px;
+}
+
+.footer__contact img {
+  height: 60px;
+}
+
+.footer__vk img {
+  height: 72px;
+  margin-top: -5px;
+  margin-left: -4px;
+}
+
+.footer__num {
+  margin-left: 40px;
+  margin-right: 20px;
+}
+
+.footer__phone {
+  text-align: right;
+  color: white;
+  font-size: 30px;
+}
+
+.footer__mail {
+  text-align: right;
+  color: white;
+  font-size: 12px;
+}
+/*# sourceMappingURL=style.css.map */
