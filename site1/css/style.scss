@@ -43,7 +43,38 @@ body{
 .why {
 }
 .lulz {
+    background: url(/site1/img/lulzback.png);
+    
+    &__header {
+    font-size: 30px;
+    min-height: 550px;
+    }
+
+    &__counteiner {
+        max-width: 1170px;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+
+    }
+
+    &__item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    &__img {
+    }
+
+    &__text {
+        margin-top: 45px;
+        color: white;
+        font-size: 14px;
+    }
 }
+
 .wecan {
 }
 .price {
