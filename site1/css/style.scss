@@ -6,7 +6,6 @@ body{
 .header {
     display: flex;
     background: #474747;
-    justify-content: space-between;
     height: 120px;
     width: 100%;
     &__logo {
@@ -16,35 +15,150 @@ body{
     }
     &__nav {
         display: flex;
-        flex-direction: row;
-        margin-left: -40%;
+        justify-content: space-between;
+        width: 100%;
+    }
+    &__items {
+        display: flex;
     }
     &__item {
-        margin: 65px 75px;
+        padding: 60px;
         font-size: 25px;
+        color: #e7e7e7;
     }
     &__callback {
         display: flex;
-
-        flex-wrap: wrap;
-        width: 300px;
+        flex-direction: column;
+        padding: 40px;
+        text-align: center;
     }
     &__tel {
         font-size: 38px;
         text-decoration: none;
+        color: #e7e7e7;;
     }
     &__call {
-
+        color: #ff8d00;
+        font-size: 24px;
     }
 }
 
 .main {
+    background: url(../img/first.png) no-repeat;
+    -moz-background-size: 100%; /* Firefox 3.6+ */
+    -webkit-background-size: 100%; /* Safari 3.1+ и Chrome 4.0+ */
+    -o-background-size: 100%; /* Opera 9.6+ */
+    background-size: 100%; /* Современные браузеры */
+    min-width: 100%;
+    min-height: 600px;
+    height: 100%;
+    background-position: center;
+    display: flex;
+    justify-content: space-between;
+    &__bg {
+        position: absolute;
+        margin: 2.5% 3% 0 3%;
+        width: 94%;
+        min-height: 600px;
+        height: 72%;
+        background: #474747;
+        opacity: 0.5;
+        z-index: 1;
+    }
+    &__text {
+        position: relative;
+        width: 100%;
+        z-index: 2;
+       & h1 {
+        color: #ff8d00;
+        font-size: 54px;
+        padding: 15%;
+        }
+        & p {
+            font-size: 44px;
+            line-height: 29px;
+            color: #e7e7e7;
+            padding-left: 15%;
+            span {
+                font-size: 24px;
+            }
+        }
+    }
+    &__application {
+        position: relative;
+        display: flex;
+        z-index: 2;
+        padding: 10%;
+        line-height: 30px;
+
+        & form {
+            display: flex;
+            flex-direction: column;
+            background:linear-gradient(to bottom left, #151C2B, #173245);
+            padding: 40px;
+            min-width: 400px;
+            width: 100%;
+            min-height: 300px;
+            color: #e7e7e7;
+            border-radius: 10px;
+            text-align: center;
+            & button {
+                margin-top: 20px;
+                background: #2288ab;
+                border: none;
+                height: 50px;
+                color:#e7e7e7;
+                font-size: 25px;
+                border-radius: 10px;
+            }
+            & input {
+                margin: 5px;
+                border-radius: 10px;
+                padding: 10px;
+            }
+            & h1 {
+                font-size: 46px;
+                margin-bottom: 5px;
+            }
+            & p {
+                font-size: 22px;
+                margin-bottom: 30px;
+            }
+        }
+    }
 }
+
 .why {
+    max-width: 100%;
+    max-height: 800px;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    padding: 50px;
+    &__items {
+        display: flex;
+        flex-direction: column;
+        & h1 {
+            font-size: 46px;
+            margin-bottom: 20px;
+        }
+    }
+    &__item {
+        display: flex;
+        align-items: center;
+        font-size: 30px;
+        margin: 10px;
+    & img {
+        margin-right: 20px;
+    }
+    }
 }
 .lulz {
-    background: url(/site1/img/lulzback.png);
-    
+    background: url(../img/lulzback.png) no-repeat;
+    -moz-background-size: 100%; /* Firefox 3.6+ */
+    -webkit-background-size: 100%; /* Safari 3.1+ и Chrome 4.0+ */
+    -o-background-size: 100%; /* Opera 9.6+ */
+    background-size: 100%; /* Современные браузеры */
     &__header {
     font-size: 30px;
     min-height: 550px;

@@ -1,90 +1,183 @@
+@charset "UTF-8";
 body {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 .header {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   background: #474747;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
   height: 120px;
   width: 100%;
 }
-
 .header__logo {
   width: 130px;
   height: 90px;
   padding: 13px 60px;
 }
-
 .header__nav {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  margin-left: -40%;
+  justify-content: space-between;
+  width: 100%;
 }
-
+.header__items {
+  display: flex;
+}
 .header__item {
-  margin: 65px 75px;
+  padding: 60px;
   font-size: 25px;
+  color: #e7e7e7;
 }
-
 .header__callback {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  width: 300px;
+  flex-direction: column;
+  padding: 40px;
+  text-align: center;
 }
-
 .header__tel {
   font-size: 38px;
   text-decoration: none;
+  color: #e7e7e7;
+}
+.header__call {
+  color: #ff8d00;
+  font-size: 24px;
+}
+
+.main {
+  background: url(../img/first.png) no-repeat;
+  /* Firefox 3.6+ */
+  /* Safari 3.1+ и Chrome 4.0+ */
+  /* Opera 9.6+ */
+  background-size: 100%;
+  /* Современные браузеры */
+  min-width: 100%;
+  min-height: 600px;
+  height: 100%;
+  background-position: center;
+  display: flex;
+  justify-content: space-between;
+}
+.main__bg {
+  position: absolute;
+  margin: 2.5% 3% 0 3%;
+  width: 94%;
+  min-height: 600px;
+  height: 72%;
+  background: #474747;
+  opacity: 0.5;
+  z-index: 1;
+}
+.main__text {
+  position: relative;
+  width: 100%;
+  z-index: 2;
+}
+.main__text h1 {
+  color: #ff8d00;
+  font-size: 54px;
+  padding: 15%;
+}
+.main__text p {
+  font-size: 44px;
+  line-height: 29px;
+  color: #e7e7e7;
+  padding-left: 15%;
+}
+.main__text p span {
+  font-size: 24px;
+}
+.main__application {
+  position: relative;
+  display: flex;
+  z-index: 2;
+  padding: 10%;
+  line-height: 30px;
+}
+.main__application form {
+  display: flex;
+  flex-direction: column;
+  background: linear-gradient(to bottom left, #151C2B, #173245);
+  padding: 40px;
+  min-width: 400px;
+  width: 100%;
+  min-height: 300px;
+  color: #e7e7e7;
+  border-radius: 10px;
+  text-align: center;
+}
+.main__application form button {
+  margin-top: 20px;
+  background: #2288ab;
+  border: none;
+  height: 50px;
+  color: #e7e7e7;
+  font-size: 25px;
+  border-radius: 10px;
+}
+.main__application form input {
+  margin: 5px;
+  border-radius: 10px;
+  padding: 10px;
+}
+.main__application form h1 {
+  font-size: 46px;
+  margin-bottom: 5px;
+}
+.main__application form p {
+  font-size: 22px;
+  margin-bottom: 30px;
+}
+
+.why {
+  max-width: 100%;
+  max-height: 800px;
+  height: 100%;
+  display: flex;
+  justify-content: space-around;
+  padding: 50px;
+}
+.why__items {
+  display: flex;
+  flex-direction: column;
+}
+.why__items h1 {
+  font-size: 46px;
+  margin-bottom: 20px;
+}
+.why__item {
+  display: flex;
+  align-items: center;
+  font-size: 30px;
+  margin: 10px;
+}
+.why__item img {
+  margin-right: 20px;
 }
 
 .lulz {
-  background: url(/site1/img/lulzback.png);
+  background: url(../img/lulzback.png) no-repeat;
+  /* Firefox 3.6+ */
+  /* Safari 3.1+ и Chrome 4.0+ */
+  /* Opera 9.6+ */
+  background-size: 100%;
+  /* Современные браузеры */
 }
-
 .lulz__header {
   font-size: 30px;
   min-height: 550px;
 }
-
 .lulz__counteiner {
   max-width: 1170px;
   margin: 0 auto;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  justify-content: space-between;
 }
-
 .lulz__item {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  flex-direction: column;
+  align-items: center;
   text-align: center;
 }
-
 .lulz__text {
   margin-top: 45px;
   color: white;
@@ -98,89 +191,62 @@ body {
 .comments {
   min-height: 720px;
 }
-
 .comments__items {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
 
 .comItem {
   min-width: 575px;
   min-height: 230px;
 }
-
 .footer {
   min-height: 118px;
   min-width: 100%;
   background-color: #474747;
 }
-
 .footer__counteiner {
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  display: -webkit-box;
-  display: -ms-flexbox;
+  align-items: center;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  justify-content: space-between;
 }
-
 .footer__logo {
   margin: 13px 40px 0px 50px;
 }
-
 .footer__org {
   color: white;
   margin-right: 330px;
 }
-
 .footer__org p {
   margin: 0px 0px 3px 0px;
 }
-
 .footer__contacts {
   margin-top: 14px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
 }
-
 .footer__contact {
   margin: 5px;
 }
-
 .footer__contact img {
   height: 60px;
 }
-
 .footer__vk img {
   height: 72px;
   margin-top: -5px;
   margin-left: -4px;
 }
-
 .footer__num {
   margin-left: 40px;
   margin-right: 20px;
 }
-
 .footer__phone {
   text-align: right;
   color: white;
   font-size: 30px;
 }
-
 .footer__mail {
   text-align: right;
   color: white;
   font-size: 12px;
 }
-/*# sourceMappingURL=style.css.map */
