@@ -50,19 +50,21 @@ body {
   /* Opera 9.6+ */
   background-size: 100%;
   /* Современные браузеры */
-  min-width: 100%;
+  width: 100%;
   min-height: 600px;
-  height: 100%;
   background-position: center;
   display: flex;
-  justify-content: space-between;
+}
+.main__main {
+  width: 100%;
+  display: flex;
+  justify-content: center;
 }
 .main__bg {
   position: absolute;
   margin: 2.5% 3% 0 3%;
   width: 94%;
-  min-height: 600px;
-  height: 72%;
+  height: 100%;
   background: #474747;
   opacity: 0.5;
   z-index: 1;
@@ -88,7 +90,6 @@ body {
 }
 .main__application {
   position: relative;
-  display: flex;
   z-index: 2;
   padding: 10%;
   line-height: 30px;
@@ -161,46 +162,180 @@ body {
   /* Opera 9.6+ */
   background-size: 100%;
   /* Современные браузеры */
+  min-height: 600px;
 }
-.lulz__header {
-  font-size: 30px;
-  min-height: 550px;
+.lulz__bg {
+  position: absolute;
+  background: #474747;
+  opacity: 0.9;
+  z-index: 1;
+  width: 100%;
+  min-height: 600px;
+}
+.lulz h1 {
+  position: relative;
+  font-size: 50px;
+  text-align: center;
+  color: #e7e7e7;
+  z-index: 2;
+  padding: 60px;
 }
 .lulz__counteiner {
+  position: relative;
+  z-index: 2;
   max-width: 1170px;
   margin: 0 auto;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
+}
+.lulz__items {
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  margin-top: 50px;
 }
 .lulz__item {
+  margin: 0 40px;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  font-size: 26px;
+  color: #e7e7e7;
+  line-height: 36px;
+}
+.lulz__img {
+  margin-bottom: 30px;
+}
+
+.wecan {
+  padding: 60px;
+}
+.wecan h1 {
+  font-size: 50px;
+  color: #474747;
   text-align: center;
 }
-.lulz__text {
-  margin-top: 45px;
-  color: white;
-  font-size: 14px;
+.wecan__options {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+}
+.wecan__options img {
+  margin-top: 60px;
+}
+.wecan__washer {
+  text-align: right;
+  margin-top: 40px;
+  line-height: 50px;
+}
+.wecan__washer h2 {
+  font-size: 40px;
+}
+.wecan__washer p {
+  line-height: 25px;
+}
+.wecan__dishwasher {
+  text-align: left;
+  margin-top: 90px;
+  line-height: 50px;
+}
+.wecan__dishwasher h2 {
+  font-size: 40px;
+}
+.wecan__dishwasher p {
+  line-height: 25px;
 }
 
 .price {
   min-height: 850px;
+  max-width: 1920px;
+  width: 100%;
+  background: url("../img/Слой 15.png") no-repeat;
+  /* Firefox 3.6+ */
+  /* Safari 3.1+ и Chrome 4.0+ */
+  /* Opera 9.6+ */
+  background-size: cover;
+  /* Современные браузеры */
+}
+.price__bg {
+  position: absolute;
+  background: #474747;
+  opacity: 0.9;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+}
+.price h1 {
+  position: relative;
+  font-size: 50px;
+  text-align: center;
+  z-index: 2;
+  padding: 30px;
+  color: #e7e7e7;
+}
+.price__items {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  font-size: 25px;
+  color: #e7e7e7;
+}
+.price__item {
+  background: linear-gradient(to bottom left, #151C2B, #173245);
+  max-width: 330px;
+  max-height: 300px;
+  padding: 30px;
+  display: flex;
+  flex: 0 0 33.333%;
+  flex-direction: column;
+  margin: 50px;
+  text-align: center;
+  line-height: 35px;
+  border-radius: 10px;
+}
+.price__item img {
+  max-width: 230px;
+  max-height: 190px;
+  margin: auto;
+  border-radius: 10px;
 }
 
 .comments {
   min-height: 720px;
+  background-color: #e7e7e7;
+  padding: 50px;
+}
+.comments h1 {
+  font-size: 50px;
+  color: #474747;
+  text-align: center;
 }
 .comments__items {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: center;
+}
+.comments__item {
+  display: flex;
+  flex: 0 0 50%;
+  flex-direction: column;
+  margin: 50px;
+  background: linear-gradient(to bottom left, #151C2B, #173245);
+  max-width: 600px;
+  min-height: 230px;
+  color: #e7e7e7;
+  padding: 20px;
+  border-radius: 10px;
+}
+.comments__item h2 {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+.comments__item p {
+  font-size: 26px;
 }
 
-.comItem {
-  min-width: 575px;
-  min-height: 230px;
-}
 .footer {
   min-height: 118px;
   min-width: 100%;
