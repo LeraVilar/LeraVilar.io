@@ -1,6 +1,10 @@
 body{
     box-sizing: border-box;
 }
+@font-face{
+    font-family: Calibre;
+    src: url(Rubik-VariableFont_wght.ttf);
+}
 
 
 $screen-max: "max-width: 1170px";
@@ -9,6 +13,7 @@ $screen-min: "max-width: 400px";
 
 
 .header {
+    font-family: Calibre;
     display: flex;
     background: #474747;
     height: 120px;
@@ -19,6 +24,7 @@ $screen-min: "max-width: 400px";
         padding: 13px 60px;
     }
     &__nav {
+        font-family: Calibre;
         display: flex;
         justify-content: space-between;
         width: 100%;
@@ -27,17 +33,20 @@ $screen-min: "max-width: 400px";
         display: flex;
     }
     &__item {
+        font-family: Calibre;
         padding: 60px;
         font-size: 25px;
         color: #e7e7e7;
     }
     &__callback {
+        font-family: Calibre;
         display: flex;
         flex-direction: column;
         padding: 40px;
         text-align: center;
     }
     &__tel {
+        font-family:  Calibre;
         font-size: 38px;
         text-decoration: none;
         color: #e7e7e7;;
@@ -49,6 +58,7 @@ $screen-min: "max-width: 400px";
 }
 
 .main {
+    font-family: Calibre;
     background: url(../img/first.png) no-repeat;
     -moz-background-size: 100%; /* Firefox 3.6+ */
     -webkit-background-size: 100%; /* Safari 3.1+ и Chrome 4.0+ */
@@ -62,14 +72,18 @@ $screen-min: "max-width: 400px";
         width: 100%;
         display: flex;
         justify-content: center;
+        @media screen and ($screen-max) {
+           justify-content: center;
+           flex-wrap: wrap;
+         }
     }
     &__bg {
         position: absolute;
         margin: 2.5% 3% 0 3%;
         width: 94%;
-        height: 100%;
-        background: #474747;
-        opacity: 0.5;
+        min-height: 560px;
+        background: #3f3f3fa4;
+        
         z-index: 1;
     }
     &__text {
@@ -98,6 +112,7 @@ $screen-min: "max-width: 400px";
         line-height: 30px;
 
         & form {
+            font-family: Calibre;
             display: flex;
             flex-direction: column;
             background:linear-gradient(to bottom left, #151C2B, #173245);
@@ -135,6 +150,7 @@ $screen-min: "max-width: 400px";
 }
 
 .why {
+    font-family: Calibre;
     max-width: 100%;
     max-height: 800px;
     height: 100%;
@@ -160,6 +176,7 @@ $screen-min: "max-width: 400px";
     }
 }
 .lulz {
+    font-family: Calibre;
     background: url(../img/lulzback.png) no-repeat;
     -moz-background-size: 100%; /* Firefox 3.6+ */
     -webkit-background-size: 100%; /* Safari 3.1+ и Chrome 4.0+ */
@@ -215,6 +232,7 @@ $screen-min: "max-width: 400px";
 }
 
 .wecan {
+    font-family: Calibre;
     padding: 60px;
     & h1 {
         font-size: 50px;
@@ -254,6 +272,7 @@ $screen-min: "max-width: 400px";
 }
 
 .price {
+    font-family: Calibre;
     min-height: 850px;
     max-width: 1920px;
     width: 100%;
@@ -324,6 +343,7 @@ $screen-min: "max-width: 400px";
 }
 
 .comments {
+    font-family: Calibre;
     min-height: 720px;
     background-color: #e7e7e7;
     padding: 50px;
@@ -361,6 +381,7 @@ $screen-min: "max-width: 400px";
 
 
 .footer {
+    font-family: Calibre;
     min-height: 118px;
     min-width: 100%;
     background-color: #474747;
