@@ -1,9 +1,13 @@
-@charset "UTF-8";
 body {
   box-sizing: border-box;
 }
 
+@font-face {
+  font-family: Calibre;
+  src: url(Rubik-VariableFont_wght.ttf);
+}
 .header {
+  font-family: Calibre;
   display: flex;
   background: #474747;
   height: 120px;
@@ -15,25 +19,45 @@ body {
   padding: 13px 60px;
 }
 .header__nav {
+  font-family: Calibre;
   display: flex;
   justify-content: space-between;
   width: 100%;
 }
-.header__items {
+@media screen and (max-width: 1170px) {
+  .header__nav {
+    display: none;
+  }
+}
+.header .show {
+  position: absolute;
   display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  background: #474747;
+  width: 100%;
+  height: 100%;
+  z-index: 54;
+}
+.header__items {
+  display: inline-flex;
 }
 .header__item {
+  font-family: Calibre;
   padding: 60px;
   font-size: 25px;
   color: #e7e7e7;
 }
 .header__callback {
+  font-family: Calibre;
   display: flex;
   flex-direction: column;
   padding: 40px;
   text-align: center;
 }
 .header__tel {
+  font-family: Calibre;
   font-size: 38px;
   text-decoration: none;
   color: #e7e7e7;
@@ -44,37 +68,36 @@ body {
 }
 
 .main {
-  background: url(../img/first.png) no-repeat;
-  /* Firefox 3.6+ */
-  /* Safari 3.1+ и Chrome 4.0+ */
-  /* Opera 9.6+ */
-  background-size: 100%;
-  /* Современные браузеры */
+  font-family: Calibre;
   width: 100%;
-  min-height: 600px;
+  height: 100%;
   background-position: center;
   display: flex;
 }
 .main__main {
-  position: absolute;
   width: 100%;
+  height: 100%;
   display: flex;
   justify-content: center;
   z-index: 2;
 }
-.main__bg {
-  position: relative;
-  margin: auto;
-  width: 94%;
-  height: 500px;
-  background: #474747;
-  opacity: 0.5;
-  z-index: 1;
+@media screen and (max-width: 1170px) {
+  .main__main {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
 }
 .main__text {
   position: relative;
   width: 50%;
+  height: 100%;
   z-index: 2;
+}
+@media screen and (max-width: 1170px) {
+  .main__text {
+    padding: 0;
+    width: 100%;
+  }
 }
 .main__text h1 {
   color: #ff8d00;
@@ -93,10 +116,11 @@ body {
 .main__application {
   position: relative;
   z-index: 2;
-  margin: 5% 0 0 5%;
+  margin: 5% auto;
   line-height: 30px;
 }
 .main__application form {
+  font-family: Calibre;
   display: flex;
   flex-direction: column;
   background: linear-gradient(to bottom left, #151C2B, #173245);
@@ -132,12 +156,18 @@ body {
 }
 
 .why {
+  font-family: Calibre;
   max-width: 100%;
-  max-height: 800px;
-  height: 100%;
+  min-height: 800px;
   display: flex;
   justify-content: space-around;
   padding: 50px;
+}
+@media screen and (max-width: 1170px) {
+  .why {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
 }
 .why__items {
   display: flex;
@@ -158,20 +188,7 @@ body {
 }
 
 .lulz {
-  background: url(../img/lulzback.png) no-repeat;
-  /* Firefox 3.6+ */
-  /* Safari 3.1+ и Chrome 4.0+ */
-  /* Opera 9.6+ */
-  background-size: 100%;
-  /* Современные браузеры */
-  min-height: 600px;
-}
-.lulz__bg {
-  position: absolute;
-  background: #474747;
-  opacity: 0.9;
-  z-index: 1;
-  width: 100%;
+  font-family: Calibre;
   min-height: 600px;
 }
 .lulz h1 {
@@ -196,6 +213,12 @@ body {
   text-align: center;
   margin-top: 50px;
 }
+@media screen and (max-width: 1170px) {
+  .lulz__items {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+}
 .lulz__item {
   margin: 0 40px;
   display: flex;
@@ -209,7 +232,13 @@ body {
 }
 
 .wecan {
+  font-family: Calibre;
   padding: 60px;
+}
+@media screen and (max-width: 1170px) {
+  .wecan {
+    display: none;
+  }
 }
 .wecan h1 {
   font-size: 50px;
@@ -248,6 +277,7 @@ body {
 }
 
 .price {
+  font-family: Calibre;
   min-height: 850px;
   max-width: 1920px;
   width: 100%;
@@ -301,6 +331,7 @@ body {
   font-size: 50px;
 }
 .comments {
+  font-family: Calibre;
   min-height: 720px;
   background-color: #e7e7e7;
   padding: 50px;
@@ -336,6 +367,7 @@ body {
 }
 
 .footer {
+  font-family: Calibre;
   min-height: 118px;
   min-width: 100%;
   background-color: #474747;

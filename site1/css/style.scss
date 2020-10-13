@@ -1,14 +1,20 @@
 body{
     box-sizing: border-box;
+
+}
+@font-face{
+    font-family: Calibre;
+    src: url(Rubik-VariableFont_wght.ttf);
 }
 
-
+$screen-burger: "min-width: 1171px";
 $screen-max: "max-width: 1170px";
 $screen-mid: "max-width: 900px";
 $screen-min: "max-width: 400px";
 
 
 .header {
+    font-family: Calibre;
     display: flex;
     background: #474747;
     height: 120px;
@@ -19,25 +25,43 @@ $screen-min: "max-width: 400px";
         padding: 13px 60px;
     }
     &__nav {
+        font-family: Calibre;
         display: flex;
         justify-content: space-between;
         width: 100%;
+        @media screen and ($screen-max) {
+           display: none;
+         }
+    }
+    .show {
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+        background: #474747;;
+        width: 100%;
+        height: 100%;
+        z-index: 54;
     }
     &__items {
-        display: flex;
+        display: inline-flex;
     }
     &__item {
+        font-family: Calibre;
         padding: 60px;
         font-size: 25px;
         color: #e7e7e7;
     }
     &__callback {
+        font-family: Calibre;
         display: flex;
         flex-direction: column;
         padding: 40px;
         text-align: center;
     }
     &__tel {
+        font-family:  Calibre;
         font-size: 38px;
         text-decoration: none;
         color: #e7e7e7;;
@@ -46,42 +70,56 @@ $screen-min: "max-width: 400px";
         color: #ff8d00;
         font-size: 24px;
     }
+    
 }
 
 .main {
-    background: url(../img/first.png) no-repeat;
-    -moz-background-size: 100%; /* Firefox 3.6+ */
-    -webkit-background-size: 100%; /* Safari 3.1+ и Chrome 4.0+ */
-    -o-background-size: 100%; /* Opera 9.6+ */
-    background-size: 100%; /* Современные браузеры */
+    font-family: Calibre;
+    // background: url(../img/first.png) no-repeat;
+    // -moz-background-size: 100%; /* Firefox 3.6+ */
+    // -webkit-background-size: 100%;  Safari 3.1+ и Chrome 4.0+ 
+    // -o-background-size: 100%; /* Opera 9.6+ */
+    // background-size: 100%; /* Современные браузеры */
     width: 100%;
-    min-height: 600px;
+    height: 100%;
     background-position: center;
     display: flex;
     &__main {
-        position: absolute;
         width: 100%;
+        height: 100%;
         display: flex;
         justify-content: center;
         z-index: 2;
+        @media screen and ($screen-max) {
+           justify-content: center;
+           flex-wrap: wrap;
+         }
     }
-    &__bg {
-        position: relative;
-        margin: auto;
-        width: 94%;
-        height: 500px;
-        background: #474747;
-        opacity: 0.5;
-        z-index: 1;
-    }
+    // &__bg {
+    //     position: absolute;
+    //     margin: auto;
+    //     width: 94%;
+    //     height: 500px;
+    //     background: #474747;
+    //     min-height: 560px;
+    //     background: #3f3f3fa4;
+        
+    //     z-index: 1;
+    // }
     &__text {
         position: relative;
         width: 50%;
+        height: 100%;
         z-index: 2;
+        @media screen and ($screen-max) {
+           padding: 0;
+           width: 100%;
+         }
        & h1 {
         color: #ff8d00;
         font-size: 54px;
         padding: 10%;
+
         }
         & p {
             font-size: 44px;
@@ -96,10 +134,11 @@ $screen-min: "max-width: 400px";
     &__application {
         position: relative;
         z-index: 2;
-        margin: 5% 0 0 5%;
+        margin: 5% auto;
         line-height: 30px;
 
         & form {
+            font-family: Calibre;
             display: flex;
             flex-direction: column;
             background:linear-gradient(to bottom left, #151C2B, #173245);
@@ -137,12 +176,16 @@ $screen-min: "max-width: 400px";
 }
 
 .why {
+    font-family: Calibre;
     max-width: 100%;
-    max-height: 800px;
-    height: 100%;
+    min-height: 800px;
     display: flex;
     justify-content: space-around;
     padding: 50px;
+    @media screen and ($screen-max) {
+           justify-content: center;
+           flex-wrap: wrap;
+         }
     &__items {
         display: flex;
         flex-direction: column;
@@ -162,22 +205,23 @@ $screen-min: "max-width: 400px";
     }
 }
 .lulz {
-    background: url(../img/lulzback.png) no-repeat;
-    -moz-background-size: 100%; /* Firefox 3.6+ */
-    -webkit-background-size: 100%; /* Safari 3.1+ и Chrome 4.0+ */
-    -o-background-size: 100%; /* Opera 9.6+ */
-    background-size: 100%; /* Современные браузеры */
+    font-family: Calibre;
+    // background: url(../img/lulzback.png) no-repeat;
+    // -moz-background-size: 100%; /* Firefox 3.6+ */
+    // -webkit-background-size: 100%; /* Safari 3.1+ и Chrome 4.0+ */
+    // -o-background-size: 100%; /* Opera 9.6+ */
+    // background-size: 100%; /* Современные браузеры */
     min-height: 600px;
- 
-    &__bg {
-        position: absolute;
-        background: #474747;
-        opacity: 0.9;
-        z-index: 1;
-        width: 100%;
-        min-height: 600px;
+    
+    // &__bg {
+    //     position: absolute;
+    //     background: #474747;
+    //     opacity: 0.9;
+    //     z-index: 1;
+    //     width: 100%;
+    //     min-height: 600px;
 
-    }
+    // }
     & h1 {
         position: relative;
         font-size: 50px;
@@ -194,6 +238,7 @@ $screen-min: "max-width: 400px";
         margin: 0 auto;
         display: flex;
         justify-content: space-around;
+
     }
 
     &__items {
@@ -201,6 +246,10 @@ $screen-min: "max-width: 400px";
         flex-direction: row;
         text-align: center;
         margin-top: 50px;
+        @media screen and ($screen-max) {
+           justify-content: center;
+           flex-wrap: wrap;
+         }
     }
     &__item {
         margin: 0 40px;
@@ -217,7 +266,11 @@ $screen-min: "max-width: 400px";
 }
 
 .wecan {
+    font-family: Calibre;
     padding: 60px;
+    @media screen and ($screen-max) {
+        display: none;    
+         }
     & h1 {
         font-size: 50px;
         color: #474747;
@@ -256,6 +309,7 @@ $screen-min: "max-width: 400px";
 }
 
 .price {
+    font-family: Calibre;
     min-height: 850px;
     max-width: 1920px;
     width: 100%;
@@ -326,6 +380,7 @@ $screen-min: "max-width: 400px";
 }
 
 .comments {
+    font-family: Calibre;
     min-height: 720px;
     background-color: #e7e7e7;
     padding: 50px;
@@ -363,6 +418,7 @@ $screen-min: "max-width: 400px";
 
 
 .footer {
+    font-family: Calibre;
     min-height: 118px;
     min-width: 100%;
     background-color: #474747;
