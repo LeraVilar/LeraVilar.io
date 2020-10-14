@@ -170,8 +170,13 @@ body {
 .main__application {
   position: relative;
   z-index: 2;
-  margin: 5% auto;
+  margin: 5% 5%;
   line-height: 30px;
+}
+@media screen and (max-width: 900px) {
+  .main__application {
+    margin: 5% 0;
+  }
 }
 .main__application form {
   font-family: Calibre;
