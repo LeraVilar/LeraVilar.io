@@ -56,6 +56,9 @@ $screen-min: "max-width: 400px";
     }
     &__items {
         display: flex;
+        & a {
+            text-decoration: none;
+        }
         @media screen and ($screen-max) {
             flex-direction: column;
             align-items: center;
@@ -106,7 +109,7 @@ $screen-min: "max-width: 400px";
         display: flex;
         justify-content: center;
         z-index: 2;
-        margin: 10% auto;
+        margin-top: 6%;
         @media screen and ($screen-max) {
            justify-content: center;
            flex-wrap: wrap;
@@ -204,6 +207,12 @@ $screen-min: "max-width: 400px";
                 margin: 5px;
                 border-radius: 10px;
                 padding: 10px;
+            }
+            & textarea {
+                margin: 5px;
+                border-radius: 10px;
+                resize: none;
+                max-width: 357px;
             }
             & h1 {
                 font-size: 46px;
