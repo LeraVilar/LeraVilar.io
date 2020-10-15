@@ -33,6 +33,11 @@ body {
   padding: 13px 60px;
 }
 
+.header__logo :hover {
+  cursor: pointer;
+  opacity: 0.7;
+}
+
 @media screen and (max-width: 900px) {
   .header__logo {
     padding: 15px;
@@ -633,6 +638,7 @@ body {
 }
 
 .comments h1 {
+  margin: 40px 0px;
   font-size: 50px;
   color: #474747;
   text-align: center;
@@ -660,7 +666,7 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  margin: 30px;
+  margin: 15px;
   background: -webkit-gradient(linear, right top, left bottom, from(#151C2B), to(#173245));
   background: linear-gradient(to bottom left, #151C2B, #173245);
   max-width: 600px;
@@ -727,6 +733,11 @@ body {
   margin: 13px 40px 0px 50px;
 }
 
+.footer__logo :hover {
+  cursor: pointer;
+  opacity: 0.7;
+}
+
 @media screen and (max-width: 900px) {
   .footer__logo {
     display: none;
@@ -773,8 +784,18 @@ body {
   margin: 5px;
 }
 
+.footer__contact :hover {
+  cursor: pointer;
+  opacity: 0.7;
+}
+
 .footer__contact img {
   height: 60px;
+}
+
+.footer__vk :hover {
+  cursor: pointer;
+  opacity: 0.7;
 }
 
 .footer__vk img {
@@ -788,6 +809,11 @@ body {
   margin-right: 20px;
 }
 
+.footer__num :hover {
+  color: #ff8d00;
+  cursor: pointer;
+}
+
 @media screen and (max-width: 400px) {
   .footer__num {
     margin: 5px 10px;
@@ -798,6 +824,16 @@ body {
   text-align: right;
   color: white;
   font-size: 30px;
+}
+
+.footer__phone a {
+  color: white;
+  text-decoration: none;
+}
+
+.footer__phone :hover {
+  color: #ff8d00;
+  cursor: pointer;
 }
 
 @media screen and (max-width: 400px) {
