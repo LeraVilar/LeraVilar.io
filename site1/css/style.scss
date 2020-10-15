@@ -196,6 +196,10 @@ $screen-min: "max-width: 400px";
         @media screen and ($screen-mid) {
             margin: 5% 0;
         }
+        a{
+            text-decoration: none;
+            color:#e7e7e7;
+        }
         & form {
             font-family: Calibre;
             display: flex;
