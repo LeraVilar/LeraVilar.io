@@ -1,12 +1,13 @@
 body{
     box-sizing: border-box;
+
 }
 @font-face{
     font-family: Calibre;
     src: url(Rubik-VariableFont_wght.ttf);
 }
 
-
+$screen-burger: "min-width: 1171px";
 $screen-max: "max-width: 1170px";
 $screen-mid: "max-width: 900px";
 $screen-min: "max-width: 400px";
@@ -18,25 +19,63 @@ $screen-min: "max-width: 400px";
     background: #474747;
     height: 120px;
     width: 100%;
+    position: fixed;
+    z-index: 60;
+    @media screen and ($screen-max) {
+           position: fixed;
+           z-index: 60;
+         }
+   
     &__logo {
         width: 130px;
         height: 90px;
         padding: 13px 60px;
+        @media screen and ($screen-mid) {
+            padding: 15px;
+        }
     }
     &__nav {
         font-family: Calibre;
         display: flex;
         justify-content: space-between;
         width: 100%;
+        a{
+            text-decoration: none;
+            color: white;
+        }
+        :hover{
+            color: #ff8d00;
+            cursor: pointer;
+        }
+        @media screen and ($screen-max) {
+           display: none;
+         }
+    }
+    .show {
+        position: fixed;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+        background: #474747;;
+        width: 100%;
+        height: 100%;
+        z-index: 54;
     }
     &__items {
         display: flex;
+        @media screen and ($screen-max) {
+            flex-direction: column;
+            align-items: center;
+         }
+
     }
     &__item {
         font-family: Calibre;
         padding: 60px;
         font-size: 25px;
         color: #e7e7e7;
+        
     }
     &__callback {
         font-family: Calibre;
@@ -55,51 +94,88 @@ $screen-min: "max-width: 400px";
         color: #ff8d00;
         font-size: 24px;
     }
+    
 }
 
 .main {
     font-family: Calibre;
-    background: url(../img/first.png) no-repeat;
-    -moz-background-size: 100%; /* Firefox 3.6+ */
-    -webkit-background-size: 100%; /* Safari 3.1+ и Chrome 4.0+ */
-    -o-background-size: 100%; /* Opera 9.6+ */
-    background-size: 100%; /* Современные браузеры */
+    // background: url(../img/first.png) no-repeat;
+    // -moz-background-size: 100%; /* Firefox 3.6+ */
+    // -webkit-background-size: 100%;  Safari 3.1+ и Chrome 4.0+ 
+    // -o-background-size: 100%; /* Opera 9.6+ */
+    // background-size: 100%; /* Современные браузеры */
     width: 100%;
-    min-height: 600px;
+    height: 100%;
     background-position: center;
     display: flex;
+
     &__main {
         width: 100%;
+        height: 100%;
         display: flex;
         justify-content: center;
+        z-index: 2;
+        margin: 8% 10% 2% 10%;
         @media screen and ($screen-max) {
            justify-content: center;
            flex-wrap: wrap;
+           
          }
     }
-    &__bg {
-        position: absolute;
-        margin: 2.5% 3% 0 3%;
-        width: 94%;
-        min-height: 560px;
-        background: #3f3f3fa4;
+    // &__bg {
+    //     position: absolute;
+    //     margin: auto;
+    //     width: 94%;
+    //     height: 500px;
+    //     background: #474747;
+    //     min-height: 560px;
+    //     background: #3f3f3fa4;
         
-        z-index: 1;
-    }
+    //     z-index: 1;
+    // }
     &__text {
         position: relative;
-        width: 100%;
+        max-width: 100%;
+        height: 100%;
         z-index: 2;
+        @media screen and ($screen-max) {
+           
+           width: 100%;
+         }
+        @media screen and ($screen-mid) {
+            margin-top: 16%;
+            padding: 0;
+        }
+        @media screen and ($screen-min) {
+            margin-top: 25%;
+        }
+        
        & h1 {
         color: #ff8d00;
         font-size: 54px;
-        padding: 15%;
+        padding: 10%;
+        @media screen and ($screen-mid) {
+            font-size: 46px;
+            padding: 10px;
+        }
+        @media screen and ($screen-min) {
+            font-size: 36px;
+            padding: 10px;
+        }
         }
         & p {
             font-size: 44px;
             line-height: 29px;
-            color: #e7e7e7;
-            padding-left: 15%;
+            color: black;
+            padding-left: 10%;
+            @media screen and ($screen-mid) {
+            font-size: 38px;
+            padding: 10px;
+        }
+            @media screen and ($screen-min) {
+            font-size: 32px;
+            padding: 10px;
+        }
             span {
                 font-size: 24px;
             }
@@ -108,17 +184,18 @@ $screen-min: "max-width: 400px";
     &__application {
         position: relative;
         z-index: 2;
-        padding: 10%;
+        margin: 5% 5%;
         line-height: 30px;
-
+        @media screen and ($screen-mid) {
+            margin: 5% 0;
+        }
         & form {
             font-family: Calibre;
             display: flex;
             flex-direction: column;
             background:linear-gradient(to bottom left, #151C2B, #173245);
             padding: 40px;
-            min-width: 400px;
-            width: 100%;
+            max-width: 400px;
             min-height: 300px;
             color: #e7e7e7;
             border-radius: 10px;
@@ -150,26 +227,53 @@ $screen-min: "max-width: 400px";
 }
 
 .why {
+    background-color: #e7e7e7;
     font-family: Calibre;
     max-width: 100%;
-    max-height: 800px;
-    height: 100%;
     display: flex;
     justify-content: space-around;
-    padding: 50px;
+    padding: 80px 50px;
+    &__png {
+        max-width: 60vh;
+        max-height: 54vh;
+        @media screen and ($screen-mid) {
+            display: none;
+        }
+    }
+    @media screen and ($screen-max) {
+           justify-content: center;
+           flex-wrap: wrap;
+         }
     &__items {
         display: flex;
         flex-direction: column;
         & h1 {
-            font-size: 46px;
+            font-size: 40px;
             margin-bottom: 20px;
+            @media screen and ($screen-mid) {
+            padding: 5px;
+            text-align: center;
+        }
+        @media screen and ($screen-min) {
+            font-size: 36px;
+            padding: 0;
+            width: 100%;
+        }
         }
     }
     &__item {
         display: flex;
         align-items: center;
-        font-size: 30px;
+        font-size: 20px;
         margin: 10px;
+        @media screen and ($screen-mid) {
+            flex-direction: column;
+            text-align: center;
+        }
+        @media screen and ($screen-min) {
+            margin: 0;
+            padding-bottom: 10px;
+        }
     & img {
         margin-right: 20px;
     }
@@ -177,29 +281,32 @@ $screen-min: "max-width: 400px";
 }
 .lulz {
     font-family: Calibre;
-    background: url(../img/lulzback.png) no-repeat;
-    -moz-background-size: 100%; /* Firefox 3.6+ */
-    -webkit-background-size: 100%; /* Safari 3.1+ и Chrome 4.0+ */
-    -o-background-size: 100%; /* Opera 9.6+ */
-    background-size: 100%; /* Современные браузеры */
+    // background: url(../img/lulzback.png) no-repeat;
+    // -moz-background-size: 100%; /* Firefox 3.6+ */
+    // -webkit-background-size: 100%; /* Safari 3.1+ и Chrome 4.0+ */
+    // -o-background-size: 100%; /* Opera 9.6+ */
+    // background-size: 100%; /* Современные браузеры */
     min-height: 600px;
- 
-    &__bg {
-        position: absolute;
-        background: #474747;
-        opacity: 0.9;
-        z-index: 1;
-        width: 100%;
-        min-height: 600px;
+    
+    // &__bg {
+    //     position: absolute;
+    //     background: #474747;
+    //     opacity: 0.9;
+    //     z-index: 1;
+    //     width: 100%;
+    //     min-height: 600px;
 
-    }
+    // }
     & h1 {
         position: relative;
         font-size: 50px;
         text-align: center;
-        color: #e7e7e7;
+        color: black;
         z-index: 2;
         padding: 60px;
+        @media screen and ($screen-mid) {
+            font-size: 34px;
+        }
     }
 
     &__counteiner {
@@ -209,6 +316,7 @@ $screen-min: "max-width: 400px";
         margin: 0 auto;
         display: flex;
         justify-content: space-around;
+
     }
 
     &__items {
@@ -216,13 +324,17 @@ $screen-min: "max-width: 400px";
         flex-direction: row;
         text-align: center;
         margin-top: 50px;
+        @media screen and ($screen-max) {
+           justify-content: center;
+           flex-wrap: wrap;
+         }
     }
     &__item {
         margin: 0 40px;
         display: flex;
         flex-direction: column;
         font-size: 26px;
-        color: #e7e7e7;
+        color: black;
         line-height: 36px;
 
     }
@@ -232,11 +344,15 @@ $screen-min: "max-width: 400px";
 }
 
 .wecan {
+    background-color: #e7e7e7;
     font-family: Calibre;
     padding: 60px;
+    @media screen and ($screen-max) {
+        display: none;    
+         }
     & h1 {
         font-size: 50px;
-        color: #474747;
+        color: black;
         text-align: center;
     }
     &__options {
@@ -273,8 +389,7 @@ $screen-min: "max-width: 400px";
 
 .price {
     font-family: Calibre;
-    min-height: 850px;
-    max-width: 1920px;
+    margin: 60px 0px;
     width: 100%;
 
 		&__header {
@@ -284,18 +399,20 @@ $screen-min: "max-width: 400px";
 		}
 
 		&__counteiner {
-            max-width: 800px;
+            max-width: 1000px;
             margin: 0 auto;
 		}
 
 		&__menu {
             display: flex;
             justify-content: space-between;
-            margin-top: 40px;
+            margin: 40px 10px 0px 10px;
             padding: 10px;
             background-color: rgb(141, 141, 141);
             border-radius: 15px;
+            @media screen and ($screen-mid) {
             
+        }
         }
             
 
@@ -306,6 +423,10 @@ $screen-min: "max-width: 400px";
             background-color: white ;
             padding: 15px;
             border-radius: 15px;
+        @media screen and ($screen-mid) {
+            margin: 0 5px;
+            font-size: 16px;
+        }
         }
         
 
@@ -318,6 +439,9 @@ $screen-min: "max-width: 400px";
 		&__content {
             margin-top: 40px;
             font-size: 35px;
+            @media screen and ($screen-mid) {
+            font-size: 24px;
+        }
             :hover{
                 background-color: rgb(255, 224, 167);
                 border-radius: 15px;
@@ -330,6 +454,7 @@ $screen-min: "max-width: 400px";
             justify-content: space-between;
             align-items: center;
             padding: 10px;
+            margin: 0px 10px;
             
 		}
         &__dots{
@@ -363,13 +488,16 @@ $screen-min: "max-width: 400px";
         display: flex;
         flex: 0 0 50%;
         flex-direction: column;
-        margin: 50px;
+        margin: 30px;
         background:linear-gradient(to bottom left, #151C2B, #173245);
         max-width: 600px;
         min-height: 230px;
         color: #e7e7e7;
         padding: 20px;
         border-radius: 10px;
+        @media screen and ($screen-mid) {
+            flex: 0 0 100%;
+        }
         & h2 {
             font-size: 36px;
             margin-bottom: 20px;

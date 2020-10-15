@@ -5,21 +5,25 @@
     <meta name="viewport" content="width=device-width">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" type="text/css" href="css/reset.css">
+    <link rel="stylesheet" type="text/css" href="css/burger.css">
     <title>Document</title>
 </head>
 <body>
     <header class="header">
         <div class="header__logo"><img src="img/logo_footer.png"></div>
-        <div class="header__nav">
+        <div id="header__burger" class="header__burger"></div>
+        <div id="header__nav" class="header__nav">
             <div class="header__items">
-                <div class="header__item">Услуги</div>
-                <div class="header__item">Отзовы</div>
+                
+                <div class="header__item"><a href="#wecan">Услуги</a></div>
+                <div class="header__item"><a href="#comments">Отзывы</a></div>
             </div>
         <div class="header__callback">
             <a href="tel:78000000000" class="header__tel">7 800 000-00-00</a>
             <a href="" class="header__call">заполните заявку</a>
         </div>
     </div>
+    
     </header>
     <div class="main">
         <div class="main__bg"></div>
@@ -35,14 +39,14 @@
                 <input type="text" placeholder="Ваше имя*">
                 <input type="text" placeholder="Ваш телефон*">
                 <input type="text" placeholder="Ваш e-mail*">
-                <button>Заказать мастера</button>
+                <button>Вызвать мастера</button>
             </form>
         </div>
     </div>
 
     </div>
     <div class="why">
-        <img src="img/Слой 12.png">
+        <img class="why__png" src="img/Слой 12.png">
         <div class="why__items">
             <h1>Почему стоит заказать ремонт у нас?</h1>
 
@@ -67,7 +71,7 @@
         </div>
     </div>
     </div>
-    <div class="wecan">
+    <div id="wecan" class="wecan">
         <h1>Мы поможем вам починить</h1>
         <div class="wecan__options">
             <div class="wecan__washer">
@@ -143,7 +147,7 @@
 
 
 
-    <div class="comments">
+    <div id="comments" class="comments">
         <h1>Отзовы наших клиентов</h1>
             <div class="comments__items">
                 <div class="comments__item">
@@ -188,5 +192,6 @@
 
 
     <script src="scripts/scripts.js"></script>
+    <script src="scripts/burger.js"></script>
 </body>
 </html>
