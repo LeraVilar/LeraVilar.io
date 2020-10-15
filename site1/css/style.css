@@ -71,6 +71,9 @@ body {
   font-size: 25px;
   color: #e7e7e7;
 }
+.header__item:hover {
+  color: #2288ab;
+}
 .header__callback {
   font-family: Calibre;
   display: flex;

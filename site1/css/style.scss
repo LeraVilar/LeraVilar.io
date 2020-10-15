@@ -70,6 +70,9 @@ $screen-min: "max-width: 400px";
         padding: 60px;
         font-size: 25px;
         color: #e7e7e7;
+        &:hover {
+            color: rgb(34, 136, 171);
+        }
     }
     &__callback {
         font-family: Calibre;
