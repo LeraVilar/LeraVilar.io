@@ -91,6 +91,10 @@ body {
   display: flex;
 }
 
+.header__items a {
+  text-decoration: none;
+}
+
 @media screen and (max-width: 1170px) {
   .header__items {
     -webkit-box-orient: vertical;
@@ -285,6 +289,13 @@ body {
   margin: 5px;
   border-radius: 10px;
   padding: 10px;
+}
+
+.main__application form textarea {
+  margin: 5px;
+  border-radius: 10px;
+  resize: none;
+  max-width: 357px;
 }
 
 .main__application form h1 {
