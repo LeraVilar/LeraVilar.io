@@ -26,6 +26,10 @@ body {
   height: 90px;
   padding: 13px 60px;
 }
+.header__logo :hover {
+  cursor: pointer;
+  opacity: 0.7;
+}
 @media screen and (max-width: 900px) {
   .header__logo {
     padding: 15px;
@@ -145,13 +149,13 @@ body {
 }
 @media screen and (max-width: 900px) {
   .main__text {
-    margin-top: 16%;
+    margin-top: 18%;
     padding: 0;
   }
 }
 @media screen and (max-width: 400px) {
   .main__text {
-    margin-top: 25%;
+    margin-top: 35%;
   }
 }
 .main__text h1 {
@@ -202,6 +206,10 @@ body {
   .main__application {
     margin: 5% 0;
   }
+}
+.main__application a {
+  text-decoration: none;
+  color: #e7e7e7;
 }
 .main__application form {
   font-family: Calibre;
@@ -441,6 +449,12 @@ body {
     font-size: 16px;
   }
 }
+@media screen and (max-width: 400px) {
+  .price__botton {
+    margin: 0 5px;
+    font-size: 14px;
+  }
+}
 .price__button_active {
   background-color: #ffe0a7;
 }
@@ -477,6 +491,7 @@ body {
   padding: 50px;
 }
 .comments h1 {
+  margin: 40px 0px;
   font-size: 50px;
   color: #474747;
   text-align: center;
@@ -490,7 +505,7 @@ body {
   display: flex;
   flex: 0 0 50%;
   flex-direction: column;
-  margin: 30px;
+  margin: 15px;
   background: linear-gradient(to bottom left, #151C2B, #173245);
   max-width: 600px;
   min-height: 230px;
@@ -536,6 +551,10 @@ body {
 .footer__logo {
   margin: 13px 40px 0px 50px;
 }
+.footer__logo :hover {
+  cursor: pointer;
+  opacity: 0.7;
+}
 @media screen and (max-width: 900px) {
   .footer__logo {
     display: none;
@@ -572,8 +591,16 @@ body {
 .footer__contact {
   margin: 5px;
 }
+.footer__contact :hover {
+  cursor: pointer;
+  opacity: 0.7;
+}
 .footer__contact img {
   height: 60px;
+}
+.footer__vk :hover {
+  cursor: pointer;
+  opacity: 0.7;
 }
 .footer__vk img {
   height: 72px;
@@ -584,6 +611,10 @@ body {
   margin-left: 40px;
   margin-right: 20px;
 }
+.footer__num :hover {
+  color: #ff8d00;
+  cursor: pointer;
+}
 @media screen and (max-width: 400px) {
   .footer__num {
     margin: 5px 10px;
@@ -593,6 +624,14 @@ body {
   text-align: right;
   color: white;
   font-size: 30px;
+}
+.footer__phone a {
+  color: white;
+  text-decoration: none;
+}
+.footer__phone :hover {
+  color: #ff8d00;
+  cursor: pointer;
 }
 @media screen and (max-width: 400px) {
   .footer__phone {

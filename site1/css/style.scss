@@ -30,6 +30,10 @@ $screen-min: "max-width: 400px";
         width: 130px;
         height: 90px;
         padding: 13px 60px;
+        :hover{
+            cursor: pointer;
+            opacity: 0.7;
+        }
         @media screen and ($screen-mid) {
             padding: 15px;
         }
@@ -155,11 +159,11 @@ $screen-min: "max-width: 400px";
            width: 100%;
          }
         @media screen and ($screen-mid) {
-            margin-top: 16%;
+            margin-top: 18%;
             padding: 0;
         }
         @media screen and ($screen-min) {
-            margin-top: 25%;
+            margin-top: 35%;
         }
         
        & h1 {
@@ -200,6 +204,10 @@ $screen-min: "max-width: 400px";
         line-height: 30px;
         @media screen and ($screen-mid) {
             margin: 5% 0;
+        }
+        a{
+            text-decoration: none;
+            color:#e7e7e7;
         }
         & form {
             font-family: Calibre;
@@ -445,6 +453,10 @@ $screen-min: "max-width: 400px";
             margin: 0 5px;
             font-size: 16px;
         }
+        @media screen and ($screen-min) {
+            margin: 0 5px;
+            font-size: 14px;
+        }
         }
         
 
@@ -492,6 +504,7 @@ $screen-min: "max-width: 400px";
     background-color: #e7e7e7;
     padding: 50px;
     & h1 {
+        margin: 40px 0px;
         font-size: 50px;
         color: #474747;
         text-align: center;
@@ -506,7 +519,7 @@ $screen-min: "max-width: 400px";
         display: flex;
         flex: 0 0 50%;
         flex-direction: column;
-        margin: 30px;
+        margin: 15px;
         background:linear-gradient(to bottom left, #151C2B, #173245);
         max-width: 600px;
         min-height: 230px;
@@ -547,6 +560,10 @@ $screen-min: "max-width: 400px";
 }
 
     &__logo {
+        :hover{
+            cursor: pointer;
+            opacity: 0.7;
+        }
         margin: 13px 40px 0px 50px;
         @media screen and ($screen-mid) {
          display: none;
@@ -574,18 +591,29 @@ $screen-min: "max-width: 400px";
     }
 
     &__contacts {
+        
         margin-top: 14px;
         display: flex;
+        
 
     }
 
     &__contact {
         margin: 5px;
+        :hover{
+            cursor: pointer;
+            opacity: 0.7;
+        }
         img{
             height: 60px;
         }
     }
     &__vk{
+        
+        :hover{
+            cursor: pointer;
+            opacity: 0.7;
+        }
         img{
             height: 72px;
             margin-top: -5px;
@@ -596,6 +624,10 @@ $screen-min: "max-width: 400px";
     &__num{
         margin-left: 40px;
         margin-right: 20px;
+        :hover{
+            color: #ff8d00;
+            cursor: pointer;
+        }
         @media screen and ($screen-min){
             margin: 5px 10px;
         }
@@ -604,6 +636,14 @@ $screen-min: "max-width: 400px";
         text-align: right;
         color: white;
         font-size: 30px;
+        a{
+            color: white;
+            text-decoration: none;
+        }
+        :hover{
+            color: #ff8d00;
+            cursor: pointer;
+        }
         @media screen and ($screen-min){
             margin: 20px 0px;
             text-align: center;
