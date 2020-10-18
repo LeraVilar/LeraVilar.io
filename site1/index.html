@@ -32,14 +32,14 @@
                 <h1>Проблемы со стиральной<br> или посудомоечной машиной?</h1>
                 <p>Приедем и отремонтируем!<br><span> Качественный ремонт любой сложности</span></p>
             </div>
-        <div class="main__application">
-            <form action="">
+        <div class="main__application" id="main__application">
+            <form action="" id="mainForm">
                 <h1>Оставить заявку</h1>
                 <p>на ремонт вашей техники</p>
-                <input type="text" placeholder="Ваше имя*">
-                <input type="text" placeholder="Ваш телефон*">
-                <textarea placeholder="Комментарий*" rows="5"> </textarea>
-                <button> <a href="good_list/index.html">Вызвать мастера</a></button>
+                <input type="text" id="name" name="name" placeholder="Ваше имя*" class="_req _name">
+                <input type="tel" id="phone" name="phone" placeholder="Ваш телефон*" class="_req _tel">
+                <textarea placeholder="Комментарий*" rows="5" id="description" name="description"> </textarea>
+                <button type="submit" id="submit">Вызвать мастера</button>
             </form>
         </div>
     </div>
@@ -193,5 +193,6 @@
 
     <script src="scripts/scripts.js"></script>
     <script src="scripts/burger.js"></script>
+    <script src="scripts/validator.js"></script>
 </body>
 </html>

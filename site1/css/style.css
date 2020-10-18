@@ -196,6 +196,9 @@ body {
 .main__text p span {
   font-size: 24px;
 }
+.main ._error {
+  box-shadow: 0 0 15px red;
+}
 .main__application {
   position: relative;
   z-index: 2;
@@ -242,6 +245,7 @@ body {
   border-radius: 10px;
   resize: none;
   max-width: 357px;
+  padding: 15px;
 }
 .main__application form h1 {
   font-size: 46px;
@@ -333,6 +337,12 @@ body {
 @media screen and (max-width: 900px) {
   .lulz h1 {
     font-size: 34px;
+  }
+}
+@media screen and (max-width: 400px) {
+  .lulz h1 {
+    font-size: 36px;
+    padding: 15px;
   }
 }
 .lulz__counteiner {
