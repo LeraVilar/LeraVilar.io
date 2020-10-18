@@ -21,12 +21,18 @@ document.addEventListener('DOMContentLoaded', function () {
 			const input = formReq[index];
 			formRemoveError(input);
 
-			if (input.classList.contains('_tel _name')) {
+			if (input.classList.contains('_tel')) {
 				if (telTest(input)) {
 					formAddError(input);
 					error++;
+				}}
+			if (input.classList.contains('_name')) {
+				if (nameTest(input)) {
+					formAddError(input);
+					error++;
 				}
-			}else {
+				}
+			else {
 				if (input.value === '') {
 					formAddError(input);
 					error++;
@@ -46,10 +52,10 @@ document.addEventListener('DOMContentLoaded', function () {
 		input.classList.remove('_error')
 	}
 	function telTest(input) {
-		return /^(\s*)?(\+)?([- _():=+]?\d[- _():=+]?){10,14}(\s*)?$/.test(input.value);
+		return !/^((8|\+7)[\- ]?)?(\(?\d{3}\)?[\- ]?)?[\d\- ]{7,10}$/.test(input.value);
 	}
-	// function nameTest(input) {
-	// 	return /^([А-Я]{1}[а-яё]{1,23}|[A-Z]{1}[a-z]{1,23})$/.test(input.value);
-	// }
+	function nameTest(input) {
+		return !/^([А-Я]{1}[а-яё]{1,23}|[A-Z]{1}[a-z]{1,23})$/.test(input.value);
+	}
 
 });
