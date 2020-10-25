@@ -278,9 +278,12 @@ body {
 .main__text p span {
   font-size: 24px;
 }
+
 .main ._error {
-  box-shadow: 0 0 15px red;
+  -webkit-box-shadow: 0 0 15px red;
+          box-shadow: 0 0 15px red;
 }
+
 .main__application {
   position: relative;
   z-index: 2;
@@ -470,12 +473,14 @@ body {
     font-size: 34px;
   }
 }
+
 @media screen and (max-width: 400px) {
   .lulz h1 {
     font-size: 36px;
     padding: 15px;
   }
 }
+
 .lulz__counteiner {
   position: relative;
   z-index: 2;
@@ -742,10 +747,13 @@ body {
 .comments__item h2 {
   font-size: 36px;
   margin-bottom: 20px;
+  color: #ff8d00;
 }
 
 .comments__item p {
-  font-size: 26px;
+  font-size: 18px;
+  line-height: 1.6em;
+  letter-spacing: 1px;
 }
 
 .footer {
