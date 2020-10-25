@@ -14,7 +14,7 @@ body {
   display: -ms-flexbox;
   display: flex;
   background: #474747;
-  height: 18vh;
+  height: 120px;
   width: 100%;
 }
 
@@ -32,6 +32,14 @@ body {
 @media screen and (max-width: 900px) {
   .header__logo {
     padding: 15px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .header__logo img {
+    width: 90px;
+    height: 70px;
+    padding: 0;
   }
 }
 
@@ -124,6 +132,25 @@ body {
   color: #e7e7e7;
 }
 
+@media screen and (max-width: 900px) {
+  .header__tel {
+    font-size: 28px;
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 570px) {
+  .header__tel {
+    font-size: 20px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .header__tel {
+    font-size: 14px;
+  }
+}
+
 .header__call {
   color: #ff8d00;
   font-size: 24px;
@@ -132,7 +159,8 @@ body {
 .good {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  min-height: 50vh;
+  min-height: 707px;
+  height: 100%;
   font-family: Calibre;
   color: black;
   padding: 20vh 200px;
