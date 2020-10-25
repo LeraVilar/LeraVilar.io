@@ -6,7 +6,8 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" type="text/css" href="css/reset.css">
     <link rel="stylesheet" type="text/css" href="css/burger.css">
-    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <title>Phenix</title>
 </head>
 <body>
     <header class="header">
@@ -32,14 +33,19 @@
                 <h1>Проблемы со стиральной<br> или посудомоечной машиной?</h1>
                 <p>Приедем и отремонтируем!<br><span> Качественный ремонт любой сложности</span></p>
             </div>
-        <div class="main__application">
-            <form action="">
+        <div class="main__application" id="main__application">
+            <form action="" id="mainForm">
                 <h1>Оставить заявку</h1>
                 <p>на ремонт вашей техники</p>
-                <input type="text" placeholder="Ваше имя*">
-                <input type="text" placeholder="Ваш телефон*">
-                <textarea type="text"  rows="5">Комментарий* </textarea>
-                <button> <a href="good_list/index.html">Вызвать мастера</a></button>
+                <!-- Hidden Required Fields -->
+                <input type="hidden" name="project_name" value="Phenix site">
+                <input type="hidden" name="admin_email" value="akopov-daniell@mail.ru">
+                <input type="hidden" name="form_subject" value="Новая заявка!">
+                <!-- END Hidden Required Fields -->
+                <input type="text" id="name" name="name" placeholder="Ваше имя*" class="_req _name">
+                <input type="tel" id="phone" name="phone" placeholder="Ваш телефон*" class="_req _tel" minlength="6">
+                <textarea placeholder="Комментарий*" rows="5" id="description" name="description"> </textarea>
+                <button type="submit" id="submit">Вызвать мастера</button>
             </form>
         </div>
     </div>
@@ -193,5 +199,7 @@
 
     <script src="scripts/scripts.js"></script>
     <script src="scripts/burger.js"></script>
+    <script src="scripts/validator.js"></script>
+    <script src="scripts/mail.js"></script>
 </body>
 </html>
