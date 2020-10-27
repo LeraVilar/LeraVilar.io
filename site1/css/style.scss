@@ -586,7 +586,7 @@ $screen-min: "max-width: 400px";
     }
 
     &__org {
-        color: white;
+        color: transparent;
         
         p{
             margin:0px 0px 3px 0px;
@@ -671,6 +671,10 @@ $screen-min: "max-width: 400px";
         text-align: right;
         color: white;
         font-size: 12px;
+        a{
+            color: white;
+            text-decoration: none;
+        }
         @media screen and ($screen-min){
             margin: 20px 0px;
             font-size: 30px;
