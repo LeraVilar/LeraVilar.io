@@ -593,6 +593,10 @@ body {
   line-height: 50px;
 }
 
+.wecan__dishwasherStyle {
+  color: #ff8d00;
+}
+
 .wecan__dishwasher h2 {
   font-size: 40px;
 }

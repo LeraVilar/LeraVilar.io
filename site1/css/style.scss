@@ -397,10 +397,13 @@ $screen-min: "max-width: 400px";
             line-height: 25px;
         }
     }
-    &__dishwasher {
+    &__dishwasher{
         text-align: left;
         margin-top: 90px;
         line-height: 50px;
+        &Style{
+            color: #ff8d00;
+        }
         & h2 {
             font-size: 40px;
         }
