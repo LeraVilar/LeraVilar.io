@@ -1,11 +1,13 @@
 body {
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 @font-face {
   font-family: Calibre;
   src: url(Rubik-VariableFont_wght.ttf);
 }
+
 .bg {
   position: absolute;
   width: 100%;
@@ -13,12 +15,14 @@ body {
   background: url("WM in room_.jpg") center no-repeat;
   background-size: cover;
   z-index: -1;
-  filter: brightness(50%);
+  -webkit-filter: brightness(50%);
+          filter: brightness(50%);
 }
 
 .good {
   background: #FFFFFF;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   width: 60%;
   min-height: 707px;
   height: 70%;
@@ -28,56 +32,64 @@ body {
   padding: 10% 5%;
   position: fixed;
   top: 50%;
-  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
   left: 50%;
 }
+
 @media screen and (max-width: 400px) {
   .good {
     width: 100%;
   }
 }
+
 @media screen and (max-width: 900px) {
   .good {
     width: 100%;
   }
 }
+
 .good__header {
   text-align: center;
   font-size: calc(36px + 16 * ((100vw - 320px) / (1920 - 320)));
 }
+
 .good__text {
   margin-top: 40px;
   font-size: 26px;
 }
+
 .good__textStyle {
   font-size: 30px;
   display: block;
   margin-top: 40px;
 }
+
 .good__textStyle_color {
   color: #e07c02;
 }
+
 .good__phone {
   margin-top: 40px;
   text-align: right;
   font-size: 36px;
 }
+
 .good__phone a {
   color: #474747;
   text-decoration: none;
 }
+
 .good__phone :hover {
   color: #ff8d00;
   cursor: pointer;
 }
+
 @media screen and (max-width: 400px) {
   .good__phone {
     font-size: 24px;
     text-align: center;
   }
-<<<<<<< HEAD
-}
-=======
 }
 
 .footer {
@@ -259,4 +271,3 @@ body {
   }
 }
 /*# sourceMappingURL=style.css.map */
->>>>>>> 334f243559c81f30208cbd2e09a4abfb4f2cf51f
