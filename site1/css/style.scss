@@ -10,7 +10,7 @@ body{
 $screen-burger: "min-width: 1171px";
 $screen-max: "max-width: 1170px";
 $screen-mid: "max-width: 900px";
-$screen-min: "max-width: 400px";
+$screen-min: "max-width: 500px";
 
 
 .header {
@@ -27,7 +27,7 @@ $screen-min: "max-width: 400px";
          }
    
     &__logo {
-        padding: 20px;
+        padding: 8px;
         img{
             margin-left: 5px;
             width: 130px;
@@ -42,7 +42,7 @@ $screen-min: "max-width: 400px";
             opacity: 0.7;
         }
         @media screen and ($screen-mid) {
-            padding: 15px;
+            padding: 8px;
         }
     }
     &__nav {
@@ -106,6 +106,7 @@ $screen-min: "max-width: 400px";
 
     }
     &__tel {
+        margin-bottom: 5px;
         font-family:  Calibre;
         font-size: 38px;
         text-decoration: none;
@@ -390,22 +391,20 @@ $screen-min: "max-width: 400px";
         text-align: right;
         margin-top: 40px;
         line-height: 50px;
-        & h2 {
-            font-size: 40px;
-        }
         & p {
-            line-height: 25px;
+            font-size: 40px;
         }
     }
     &__dishwasher {
         text-align: left;
         margin-top: 90px;
         line-height: 50px;
-        & h2 {
-            font-size: 40px;
+        &Style{
+            color: #e67e00;
         }
+        
         & p {
-            line-height: 25px;
+            font-size: 40px;
         }
     }
 }
@@ -490,6 +489,9 @@ $screen-min: "max-width: 400px";
             position: absolute;
             font-size: 50px;
             @media screen and ($screen-mid) {
+                font-size: 16px;
+            }
+            @media screen and ($screen-min) {
                 display: none;
             }
         }
@@ -510,6 +512,9 @@ $screen-min: "max-width: 400px";
                 color: #ff8d00;
                 font-size: 22px;
                 @media screen and ($screen-mid) {
+                    font-size: 14px; 
+                }
+                @media screen and (max-width: 360px) {
                     display: none;
                 }
             }
@@ -606,7 +611,7 @@ $screen-min: "max-width: 400px";
     }
 
     &__org {
-        color: white;
+        color: transparent;
         
         p{
             margin:0px 0px 3px 0px;
