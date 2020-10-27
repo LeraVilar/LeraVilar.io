@@ -2,14 +2,16 @@ document.addEventListener('DOMContentLoaded', function () {
 	const form = document.getElementById('mainForm');
 	form.addEventListener('submit', formSend);
 
+
 	async function formSend(e) {
 		e.preventDefault();
 
 		let error = formValidate(form);
-
 		if (error === 0) {
-			document.location.href = '../site1/good_list/index.html';
-		}
+			window.location.href = "../site1/good_list/index.html"
+
+		}	
+		
 		
 	}
 

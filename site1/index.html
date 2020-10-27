@@ -7,7 +7,7 @@
     <link rel="stylesheet" type="text/css" href="css/reset.css">
     <link rel="stylesheet" type="text/css" href="css/burger.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <title>Phenix</title>
+    <title>Phoenix</title>
 </head>
 <body>
     <header class="header">
@@ -16,8 +16,8 @@
         <div id="header__nav" class="header__nav">
             <div class="header__items">
                 
-                <div class="header__item"><a href="#wecan">Услуги</a></div>
-                <div class="header__item"><a href="#comments">Отзывы</a></div>
+                <div class="header__item" id="item"><a href="#price">Услуги</a></div>
+                <div class="header__item" id="item"><a href="#comments">Отзывы</a></div>
             </div>
         <div class="header__callback">
             <a href="tel:78000000000" class="header__tel">7 800 000-00-00</a>
@@ -27,7 +27,6 @@
     
     </header>
     <div id="main" class="main">
-        <div class="main__bg"></div>
         <div class="main__main">        
             <div class="main__text">
                 <h1>Проблемы со стиральной<br> или посудомоечной машиной?</h1>
@@ -49,7 +48,11 @@
             </form>
         </div>
     </div>
-
+    <div class="main__popup" id="popup1">
+    <div class="main__popup-content">
+        Thank you!
+    </div>
+</div>
     </div>
     <div class="why">
         <img class="why__png" src="img/Слой 12.png">
@@ -105,7 +108,7 @@
             </div>
         </div>
     </div>
-    <div class="price">
+    <div class="price" id="price">
         <div class="price__header">Прайс лист</div>
         <div class="price__counteiner">
             <div class="price__menu">
