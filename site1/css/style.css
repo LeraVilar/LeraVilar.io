@@ -17,14 +17,23 @@ body {
 }
 @media screen and (max-width: 1170px) {
   .header {
-    position: fixed;
+    height: 100px;
     z-index: 60;
   }
 }
 .header__logo {
+  padding: 20px;
+}
+.header__logo img {
+  margin-left: 5px;
   width: 130px;
   height: 90px;
-  padding: 13px 60px;
+}
+@media screen and (max-width: 1170px) {
+  .header__logo img {
+    width: 120px;
+    height: 78px;
+  }
 }
 .header__logo :hover {
   cursor: pointer;
@@ -58,6 +67,7 @@ body {
   position: fixed;
   display: flex;
   flex-direction: column;
+  justify-content: center;
   text-align: center;
   align-items: center;
   background: #474747;
@@ -99,6 +109,11 @@ body {
   text-decoration: none;
   color: #e7e7e7;
 }
+@media screen and (max-width: 1170px) {
+  .header__tel {
+    font-size: calc(24px + 16 * ((100vw - 320px) / (1280 - 320)));
+  }
+}
 .header__call {
   color: #ff8d00;
   font-size: 24px;
@@ -111,26 +126,7 @@ body {
   background-position: center;
   display: flex;
 }
-.main__popup {
-  width: 100%;
-  height: 100vh;
-  background-color: rgba(0, 0, 0, 0.5);
-  overflow: hidden;
-  position: fixed;
-  visibility: hidden;
-  z-index: 70;
-}
-.main__popup-content {
-  margin: 20% auto;
-  width: 500px;
-  height: 100px;
-  padding: 10px;
-  background-color: #c5c5c5;
-  border-radius: 5px;
-  box-shadow: 0px 0px 10px #000;
-  z-index: 70;
-}
-.main__main {
+.main__first {
   width: 100%;
   height: 100%;
   display: flex;
@@ -139,19 +135,19 @@ body {
   margin: 5% 10% 2% 10%;
 }
 @media screen and (max-width: 1170px) {
-  .main__main {
+  .main__first {
     justify-content: center;
     flex-wrap: wrap;
     margin: 8% 10% 2% 10%;
   }
 }
 @media screen and (max-width: 900px) {
-  .main__main {
+  .main__first {
     margin: 10% 10% 2% 10%;
   }
 }
 @media screen and (max-width: 400px) {
-  .main__main {
+  .main__first {
     margin: 5% 0;
   }
 }
@@ -260,6 +256,8 @@ body {
   padding: 10px;
 }
 .main__application form textarea {
+  padding: 10px;
+  font-family: Calibre;
   margin: 5px;
   border-radius: 10px;
   resize: none;
@@ -338,6 +336,8 @@ body {
   }
 }
 .why__item img {
+  margin-top: 16px;
+  margin-bottom: 16px;
   margin-right: 20px;
 }
 
@@ -385,7 +385,7 @@ body {
   }
 }
 .lulz__item {
-  margin: 0 40px;
+  margin: 0 40px 40px;
   display: flex;
   flex-direction: column;
   font-size: 26px;
@@ -393,7 +393,7 @@ body {
   line-height: 36px;
 }
 .lulz__img {
-  margin-bottom: 30px;
+  margin-bottom: 10px;
 }
 
 .wecan {
@@ -550,9 +550,12 @@ body {
 .comments__item h2 {
   font-size: 36px;
   margin-bottom: 20px;
+  color: #ff8d00;
 }
 .comments__item p {
-  font-size: 26px;
+  font-size: 18px;
+  line-height: 1.6em;
+  letter-spacing: 1px;
 }
 
 .footer {
@@ -569,11 +572,13 @@ body {
 }
 @media screen and (max-width: 400px) {
   .footer__counteiner {
+    padding-bottom: 6vh;
     justify-content: center;
   }
 }
 @media screen and (max-width: 900px) {
   .footer__counteiner {
+    padding-bottom: 6vh;
     justify-content: space-around;
   }
 }

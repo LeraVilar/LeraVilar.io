@@ -22,14 +22,21 @@ $screen-min: "max-width: 400px";
     position: fixed;
     z-index: 60;
     @media screen and ($screen-max) {
-           position: fixed;
-           z-index: 60;
+            height: 100px;
+            z-index: 60;
          }
    
     &__logo {
-        width: 130px;
-        height: 90px;
-        padding: 13px 60px;
+        padding: 20px;
+        img{
+            margin-left: 5px;
+            width: 130px;
+            height: 90px;
+            @media screen and ($screen-max) {
+                width: 120px;
+                height: 78px;
+            }
+        }
         :hover{
             cursor: pointer;
             opacity: 0.7;
@@ -43,6 +50,7 @@ $screen-min: "max-width: 400px";
         display: flex;
         justify-content: space-between;
         width: 100%;
+        
         a{
             text-decoration: none;
             color: white;
@@ -59,6 +67,7 @@ $screen-min: "max-width: 400px";
         position: fixed;
         display: flex;
         flex-direction: column;
+        justify-content: center;
         text-align: center;
         align-items: center;
         background: #474747;;
@@ -93,12 +102,18 @@ $screen-min: "max-width: 400px";
         flex-direction: column;
         padding: 40px;
         text-align: center;
+
+
     }
     &__tel {
         font-family:  Calibre;
         font-size: 38px;
         text-decoration: none;
-        color: #e7e7e7;;
+        color: #e7e7e7;
+        @media screen and ($screen-max) {
+            font-size: calc(24px + 16 * ((100vw - 320px) / (1280 - 320)));
+            
+        }
     }
     &__call {
         color: #ff8d00;
@@ -109,35 +124,11 @@ $screen-min: "max-width: 400px";
 
 .main {
     font-family: Calibre;
-    // background: url(../img/first.png) no-repeat;
-    // -moz-background-size: 100%; /* Firefox 3.6+ */
-    // -webkit-background-size: 100%;  Safari 3.1+ и Chrome 4.0+ 
-    // -o-background-size: 100%; /* Opera 9.6+ */
-    // background-size: 100%; /* Современные браузеры */
     width: 100%;
     height: 100%;
     background-position: center;
     display: flex;
-    &__popup {
-        width:100%;
-        height:100vh;
-        background-color: rgba(0,0,0,0.5);
-        overflow:hidden;
-        position:fixed;
-        visibility: hidden;
-        z-index: 70;
-        &-content {
-            margin:20% auto;
-            width:500px;
-            height: 100px;
-            padding:10px;
-            background-color: #c5c5c5;
-            border-radius:5px;
-            box-shadow: 0px 0px 10px #000;
-            z-index: 70;
-        }
-    }
-    &__main {
+    &__first {
         width: 100%;
         height: 100%;
         display: flex;
@@ -156,7 +147,6 @@ $screen-min: "max-width: 400px";
            margin: 5% 0;
          }
     }
-
     &__text {
         position: relative;
         max-width: 100%;
@@ -247,6 +237,8 @@ $screen-min: "max-width: 400px";
 
             }
             & textarea {
+                padding: 10px;
+                font-family: Calibre;
                 margin: 5px;
                 border-radius: 10px;
                 resize: none;
@@ -314,28 +306,15 @@ $screen-min: "max-width: 400px";
             padding-bottom: 10px;
         }
     & img {
+        margin-top: 16px;
+        margin-bottom: 16px;
         margin-right: 20px;
     }
     }
 }
 .lulz {
     font-family: Calibre;
-    // background: url(../img/lulzback.png) no-repeat;
-    // -moz-background-size: 100%; /* Firefox 3.6+ */
-    // -webkit-background-size: 100%; /* Safari 3.1+ и Chrome 4.0+ */
-    // -o-background-size: 100%; /* Opera 9.6+ */
-    // background-size: 100%; /* Современные браузеры */
     min-height: 600px;
-    
-    // &__bg {
-    //     position: absolute;
-    //     background: #474747;
-    //     opacity: 0.9;
-    //     z-index: 1;
-    //     width: 100%;
-    //     min-height: 600px;
-
-    // }
     & h1 {
         position: relative;
         font-size: 50px;
@@ -373,7 +352,7 @@ $screen-min: "max-width: 400px";
          }
     }
     &__item {
-        margin: 0 40px;
+        margin: 0 40px 40px;
         display: flex;
         flex-direction: column;
         font-size: 26px;
@@ -382,7 +361,8 @@ $screen-min: "max-width: 400px";
 
     }
    &__img {
-    margin-bottom: 30px;
+    margin-bottom: 10px;
+
    }
 }
 
@@ -549,9 +529,12 @@ $screen-min: "max-width: 400px";
         & h2 {
             font-size: 36px;
             margin-bottom: 20px;
+            color: #ff8d00;
         }
         & p {
-            font-size: 26px;
+            font-size: 18px;
+            line-height: 1.6em;
+            letter-spacing: 1px;
         }
         }
 }
@@ -564,14 +547,17 @@ $screen-min: "max-width: 400px";
     background-color: #474747;
 
     &__counteiner {
+        
         align-items: center;
         display: flex;
         justify-content: space-between;
         flex-wrap: wrap;
     @media screen and ($screen-min) {
+            padding-bottom: 6vh;
 			justify-content: center;
     }
     @media screen and ($screen-mid) {
+        padding-bottom: 6vh;
         justify-content: space-around;
 }
 }
