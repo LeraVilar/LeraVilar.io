@@ -9,3 +9,11 @@ function open() {
 
 }
 
+document.getElementById("items").onclick = function() {close()};
+
+function close() {
+	document.getElementById("header__burger").classList.toggle("active");
+    document.getElementById("header__nav").classList.remove("show");
+
+
+}

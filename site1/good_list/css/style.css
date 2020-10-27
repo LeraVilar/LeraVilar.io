@@ -1,225 +1,83 @@
 body {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 @font-face {
   font-family: Calibre;
   src: url(Rubik-VariableFont_wght.ttf);
 }
-
-.header {
-  font-family: Calibre;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  background: #474747;
-  height: 120px;
-  width: 100%;
-}
-
-.header__logo {
-  width: 130px;
-  height: 90px;
-  padding: 13px 60px;
-}
-
-.header__logo :hover {
-  cursor: pointer;
-  opacity: 0.7;
-}
-
-@media screen and (max-width: 900px) {
-  .header__logo {
-    padding: 15px;
-  }
-}
-
-@media screen and (max-width: 400px) {
-  .header__logo img {
-    width: 90px;
-    height: 70px;
-    padding: 0;
-  }
-}
-
-.header__nav {
-  font-family: Calibre;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  width: 100%;
-}
-
-.header__nav a {
-  text-decoration: none;
-  color: white;
-}
-
-.header__nav :hover {
-  color: #ff8d00;
-  cursor: pointer;
-}
-
-.header .show {
-  position: fixed;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  text-align: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  background: #474747;
+.bg {
+  position: absolute;
   width: 100%;
   height: 100%;
-  z-index: 54;
-}
-
-.header__items {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-.header__items a {
-  text-decoration: none;
-}
-
-@media screen and (max-width: 1170px) {
-  .header__items {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-  }
-}
-
-.header__item {
-  font-family: Calibre;
-  padding: 60px;
-  font-size: 25px;
-  color: #e7e7e7;
-}
-
-.header__callback {
-  font-family: Calibre;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  padding: 40px;
-  text-align: center;
-}
-
-.header__tel {
-  font-family: Calibre;
-  font-size: 38px;
-  text-decoration: none;
-  color: #e7e7e7;
-}
-
-@media screen and (max-width: 900px) {
-  .header__tel {
-    font-size: 28px;
-    width: 100%;
-  }
-}
-
-@media screen and (max-width: 570px) {
-  .header__tel {
-    font-size: 20px;
-  }
-}
-
-@media screen and (max-width: 400px) {
-  .header__tel {
-    font-size: 14px;
-  }
-}
-
-.header__call {
-  color: #ff8d00;
-  font-size: 24px;
+  background: url("WM in room_.jpg") center no-repeat;
+  background-size: cover;
+  z-index: -1;
+  filter: brightness(50%);
 }
 
 .good {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  background: #FFFFFF;
+  box-sizing: border-box;
+  width: 60%;
   min-height: 707px;
-  height: 100%;
+  height: 70%;
   font-family: Calibre;
-  color: black;
-  padding: 20vh 200px;
+  color: #474747;
+  margin: auto;
+  padding: 10% 5%;
+  position: fixed;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  left: 50%;
 }
-
 @media screen and (max-width: 400px) {
   .good {
-    padding: 15vh 5vh;
+    width: 100%;
   }
 }
-
 @media screen and (max-width: 900px) {
   .good {
-    padding: 15vh 5vh;
+    width: 100%;
   }
 }
-
 .good__header {
   text-align: center;
-  font-size: 40px;
+  font-size: calc(36px + 16 * ((100vw - 320px) / (1920 - 320)));
 }
-
 .good__text {
   margin-top: 40px;
   font-size: 26px;
 }
-
 .good__textStyle {
   font-size: 30px;
   display: block;
   margin-top: 40px;
 }
-
 .good__textStyle_color {
   color: #e07c02;
 }
-
 .good__phone {
   margin-top: 40px;
   text-align: right;
-  color: black;
   font-size: 36px;
 }
-
 .good__phone a {
-  color: black;
+  color: #474747;
   text-decoration: none;
 }
-
 .good__phone :hover {
   color: #ff8d00;
   cursor: pointer;
 }
-
 @media screen and (max-width: 400px) {
   .good__phone {
     font-size: 24px;
     text-align: center;
   }
+<<<<<<< HEAD
+}
+=======
 }
 
 .footer {
@@ -401,3 +259,4 @@ body {
   }
 }
 /*# sourceMappingURL=style.css.map */
+>>>>>>> 334f243559c81f30208cbd2e09a4abfb4f2cf51f
