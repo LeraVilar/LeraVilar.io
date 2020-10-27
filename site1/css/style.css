@@ -32,7 +32,7 @@ body {
 }
 
 .header__logo img {
-  margin-left: 15px;
+  margin-left: 5px;
   width: 130px;
   height: 90px;
 }
@@ -593,10 +593,6 @@ body {
   line-height: 50px;
 }
 
-.wecan__dishwasherStyle {
-  color: #ff8d00;
-}
-
 .wecan__dishwasher h2 {
   font-size: 40px;
 }
@@ -668,7 +664,7 @@ body {
 
 .price__content {
   margin-top: 40px;
-  font-size: 35px;
+  font-size: 30px;
 }
 
 @media screen and (max-width: 900px) {
@@ -699,17 +695,57 @@ body {
 
 .price__dots {
   left: 50%;
-  font-size: 50px;
   position: absolute;
+  font-size: 50px;
 }
 
-.price__items {
-  font-size: 24px;
+@media screen and (max-width: 900px) {
+  .price__dots {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .price__items {
+    margin: 0 5px;
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .price__items {
+    margin: 0 5px;
+    font-size: 14px;
+  }
+}
+
+.price__sum {
+  font-size: 35px;
 }
 
 .price__sumStyle {
   color: #ff8d00;
-  font-size: 20px;
+  font-size: 22px;
+}
+
+@media screen and (max-width: 900px) {
+  .price__sumStyle {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .price__sum {
+    margin: 0 5px;
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .price__sum {
+    margin: 0 5px;
+    font-size: 14px;
+  }
 }
 
 .comments {
@@ -838,7 +874,7 @@ body {
 }
 
 .footer__org {
-  color: transparent;
+  color: white;
 }
 
 .footer__org p {
@@ -938,9 +974,10 @@ body {
 }
 
 .footer__mail {
+  padding: 5px 0px;
   text-align: right;
   color: white;
-  font-size: 12px;
+  font-size: 16px;
 }
 
 .footer__mail a {
@@ -951,14 +988,14 @@ body {
 @media screen and (max-width: 400px) {
   .footer__mail {
     margin: 20px 0px;
-    font-size: 30px;
+    font-size: calc(24px + 12 * ((100vw - 320px) / (1280 - 320)));
     text-align: center;
   }
 }
 
 @media screen and (max-width: 900px) {
   .footer__mail {
-    font-size: 30px;
+    font-size: calc(24px + 16 * ((100vw - 320px) / (1280 - 320)));
     margin: 10px 0px;
     text-align: center;
   }
