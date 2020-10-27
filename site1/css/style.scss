@@ -29,7 +29,7 @@ $screen-min: "max-width: 400px";
     &__logo {
         padding: 20px;
         img{
-            margin-left: 15px;
+            margin-left: 5px;
             width: 130px;
             height: 90px;
             @media screen and ($screen-max) {
@@ -257,6 +257,7 @@ $screen-min: "max-width: 400px";
     }
 }
 
+
 .why {
     background-color: #e7e7e7;
     font-family: Calibre;
@@ -477,7 +478,6 @@ $screen-min: "max-width: 400px";
 		}
 
 		&__list {
-            position: relative;
             display: flex;
             justify-content: space-between;
             align-items: center;
@@ -486,21 +486,13 @@ $screen-min: "max-width: 400px";
             
 		}
         &__dots{
-            left: 50%;
             font-size: 50px;
-            position: absolute;
         }
 		&__items {
-            font-size: 24px;
 
 		}
 
 		&__sum {
-            &Style{
-                color: #ff8d00;
-                font-size: 20px;
-            }
-            
 		}
 }
 
@@ -586,7 +578,7 @@ $screen-min: "max-width: 400px";
     }
 
     &__org {
-        color: transparent;
+        color: white;
         
         p{
             margin:0px 0px 3px 0px;
@@ -671,10 +663,6 @@ $screen-min: "max-width: 400px";
         text-align: right;
         color: white;
         font-size: 12px;
-        a{
-            color: white;
-            text-decoration: none;
-        }
         @media screen and ($screen-min){
             margin: 20px 0px;
             font-size: 30px;
