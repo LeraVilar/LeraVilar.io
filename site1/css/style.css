@@ -35,7 +35,7 @@ body {
 }
 
 .header__logo img {
-  margin-left: 5px;
+  margin-left: 15px;
   width: 130px;
   height: 90px;
 }
@@ -673,6 +673,7 @@ body {
 }
 
 .price__list {
+  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -687,7 +688,18 @@ body {
 }
 
 .price__dots {
+  left: 50%;
   font-size: 50px;
+  position: absolute;
+}
+
+.price__items {
+  font-size: 24px;
+}
+
+.price__sumStyle {
+  color: #ff8d00;
+  font-size: 20px;
 }
 
 .comments {

@@ -32,7 +32,7 @@ $screen-min: "max-width: 400px";
     &__logo {
         
         img{
-            margin-left: 5px;
+            margin-left: 15px;
             width: 130px;
             height: 90px;
             @media screen and ($screen-max) {
@@ -475,6 +475,7 @@ $screen-min: "max-width: 400px";
 		}
 
 		&__list {
+            position: relative;
             display: flex;
             justify-content: space-between;
             align-items: center;
@@ -483,13 +484,21 @@ $screen-min: "max-width: 400px";
             
 		}
         &__dots{
+            left: 50%;
             font-size: 50px;
+            position: absolute;
         }
 		&__items {
+            font-size: 24px;
 
 		}
 
 		&__sum {
+            &Style{
+                color: #ff8d00;
+                font-size: 20px;
+            }
+            
 		}
 }
 
