@@ -995,9 +995,9 @@ body {
 }
 
 @media screen and (max-width: 500px) {
-  .footer__mail {
+  .footer__mail a{
     margin: 20px 0px;
-    font-size: calc(24px + 12 * ((100vw - 320px) / (1280 - 320)));
+    font-size: calc(20px + 12 * ((100vw - 320px) / (1280 - 320)));
     text-align: center;
   }
 }
